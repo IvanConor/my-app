@@ -1,0 +1,10 @@
+.router-view {
+    height: 100vh;
+    padding-top: $router-top-padding;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}

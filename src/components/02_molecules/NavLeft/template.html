@@ -1,0 +1,8 @@
+<div class="nav-left">
+  <ReturnBtn v-if="pageName !== 'Home'" @return="emitReturn" />
+  <ul class="quicklinks">
+    <li v-if="pageName !== 'Home'"><router-link to="/">Home</router-link></li>
+    <li>Notifications</li>
+  </ul>
+  <div class="next-bonus">Next Bonus</div>
+</div>

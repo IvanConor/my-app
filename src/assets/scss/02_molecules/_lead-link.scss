@@ -1,0 +1,27 @@
+.lead-link {
+    padding: 0.5rem;
+
+    &.big {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    &.small {
+        grid-column: span 2;
+    }
+
+    .anchor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.lead-link-inner {
+    position: relative;
+    background-color: $black;
+    border-radius: 0.5rem;
+    height: 100%;
+}

@@ -1,0 +1,8 @@
+<div
+  class="lead-link"
+  :class="size">
+  <div class="lead-link-inner">
+    <router-link class="anchor" :to="'/'+path"></router-link>
+    {{ title !== undefined ? title : 'Default title' }}
+  </div>
+</div>

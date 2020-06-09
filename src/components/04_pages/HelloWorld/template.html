@@ -1,0 +1,11 @@
+<div class="hello">
+    <h1>{{ msg }}</h1>
+    <br>
+    <h1>{{ getCash }}</h1>
+    <button @click="addCash">Add Cash:</button><input type="number" v-model=cashUp>
+    <button @click="reduceCash">Reduce Cash:</button><input type="number" v-model=cashDown>
+    <br>
+    <h1>{{ getCoins }}</h1>
+    <button @click="addCoins">Add Coins:</button><input type="number" v-model=coinsUp>
+    <button @click="reduceCoins">Reduce Coins:</button><input type="number" v-model=coinsDown>
+</div>

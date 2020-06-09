@@ -1,0 +1,5 @@
+<div class="nav">
+  <NavLeft :pageName="currentPage" @goBack="backToPrevious" />
+  <NavCenter :pageName="currentPage" />
+  <NavRight :cash="getCash" :coins="getCoins" />
+</div>
