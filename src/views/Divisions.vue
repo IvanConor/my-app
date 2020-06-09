@@ -1,10 +1,10 @@
 <template>
   <div class="router-view grid divisions-page">
-    <LeadLink size="small" title="Division Match" />
-    <LeadLink size="big" title="Tactical Plan" />
-    <LeadLink size="small" title="Leaderboards" />
-    <LeadLink size="big" title="Division Stars" />
-    <LeadLink size="small" title="Match Results" />
+    <LeadLink size="small" title="Division Match" path="match" />
+    <LeadLink size="big" title="Tactical Plan" path="tactics" />
+    <LeadLink size="small" title="Leaderboards" path="leaderboards" />
+    <LeadLink size="big" title="Division Stars" path="division-stars" />
+    <LeadLink size="small" title="Match Results" path="match-results" />
   </div>
 </template>
 

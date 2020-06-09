@@ -1,9 +1,8 @@
 <template>
   <div class="router-view grid extras-page">
-    <LeadLink size="small" title="My Profile" />
-    <LeadLink size="small" title="Achievements" />
-    <LeadLink size="tiny" title="Settings" />
-    <LeadLink size="tiny" title="Sign Off" />
+    <LeadLink size="small" title="My Profile" path="profile" />
+    <LeadLink size="small" title="Achievements" path="achievements" />
+    <LeadLink size="tiny" title="Settings" path="settings" />
   </div>
 </template>
 

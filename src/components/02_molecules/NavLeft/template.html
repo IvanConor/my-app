@@ -1,24 +1,32 @@
 <div class="nav-left">
   <!-- return btn -->
-  <IconBtn
+  <a
     v-if="pageName !== 'Home'"
-    :source="imgReturn"
-    classNames="rounded bg-black"
-    @return="emitReturn" />
+    class="go-back">
+    <IconBtn
+      :source="imgPaths.imgReturn"
+      classNames="rounded bg-black"
+      @iconclick="goBack" />
+  </a>
   <ul class="quicklinks">
     <!-- home btn -->
     <li v-if="pageName !== 'Home'">
       <router-link to="/">
         <IconBtn
-          :source="imgHome"
+          :source="imgPaths.imgHome"
           classNames="rounded bg-black" />
       </router-link>
     </li>
     <!-- notification btn -->
-    <li>
+    <li class="notifications-wrapper" @click="showNotifications">
       <IconBtn
-        :source="imgNotification"
+        :source="imgPaths.imgNotification"
         classNames="rounded bg-black" />
+      <div v-if="toggleNotifications" class="notifications">
+        <p>Notification 1</p>
+        <p>Notification 2</p>
+        <p>Notification 3</p>
+      </div>
     </li>
   </ul>
   <!-- next bonus -->

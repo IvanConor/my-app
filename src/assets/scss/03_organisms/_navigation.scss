@@ -11,10 +11,6 @@
     padding-right: $side-padding;
     background-color: $blue-dark;
     color: $white;
-
-    a {
-        color: $white;
-    }
 }
 
 .nav-left {
@@ -24,21 +20,34 @@
     justify-content: flex-start;
     position: relative;
     text-align: left;
-    height: 3rem;
+
+    .notifications-wrapper {
+        position: relative;
+    }
+
+    .notifications {
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        width: 10rem;
+        background-color: $black;
+        border: 2px solid $blue-dark;
+        border-radius: 0.5rem;
+        text-align: center;
+        z-index: 1;
+    }
 }
 
 .nav-center {
     flex: 1;
+    background-color: $black;
     text-align: center;
-    height: 3rem;
+    transform: skew(-15deg);
 
     .page-name {
-        padding: 0.75rem;
         margin: 0;
-        margin-top: 0.25rem;
-        background-color: $black;
-        border-radius: 0.5rem;
-        line-height: 1rem;
+        padding: 1rem;
+        transform: skew(15deg);
     }
 }
 
@@ -47,30 +56,22 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 3rem;
 }
 
 .go-back {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-    text-align: center;
+    margin-right: 1rem;
     cursor: pointer;
 }
 
 .quicklinks {
-    display: inline-block;
     height: 2.5rem;
     li {
         display: inline-block;
-        width: 2.5rem;
-        height: 2.5rem;
-        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
 .next-bonus {
-    display: inline-block;
     position: absolute;
     right: 1rem;
     top: 50%;

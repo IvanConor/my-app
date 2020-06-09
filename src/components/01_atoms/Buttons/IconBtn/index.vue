@@ -9,7 +9,7 @@ export default {
   },
   methods: {
     emitClick: function() {
-      this.$emit('return')
+      this.$emit('iconclick')
     }
   }
 }

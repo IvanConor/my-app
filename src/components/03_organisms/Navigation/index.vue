@@ -23,11 +23,6 @@ export default {
     currentPage() {
       return this.$route.name;
     }
-  },
-  methods: {
-    backToPrevious: function() {
-      this.$router.go(-1);
-    }
   }
 }
 </script>

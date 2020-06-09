@@ -11,14 +11,20 @@ export default {
   },
   data() {
     return {
-      imgReturn: require("@/assets/images/icons/return_white.svg"),
-      imgHome: require("@/assets/images/icons/home_white.svg"),
-      imgNotification: require("@/assets/images/icons/notification_white.svg")
+      imgPaths: {
+        imgReturn: require("@/assets/images/icons/return_white.svg"),
+        imgHome: require("@/assets/images/icons/home_white.svg"),
+        imgNotification: require("@/assets/images/icons/notification_white.svg")
+      },
+      toggleNotifications: false
     }
   },
   methods: {
-    emitReturn: function() {
-      this.$emit('goBack')
+    goBack: function() {
+      this.$router.go(-1);
+    },
+    showNotifications: function() {
+      this.toggleNotifications = !this.toggleNotifications;
     }
   }
 }

@@ -1,10 +1,10 @@
 <template>
   <div class="router-view grid home-page">
-    <LeadLink size="big" path="club-house" title="Club House" />
-    <LeadLink size="small" path="cards" title="Cards" />
-    <LeadLink size="small" path="divisions" title="Divisions" />
-    <LeadLink size="big" path="" title="Promo Screen" />
-    <LeadLink size="small" path="extras" title="Extras" />
+    <LeadLink size="big" title="Club House" path="club-house" />
+    <LeadLink size="small" title="Cards" path="cards" />
+    <LeadLink size="small" title="Divisions" path="divisions" />
+    <LeadLink size="big" title="Promo Screen" path="promo" />
+    <LeadLink size="small" title="Extras" path="extras" />
   </div>
 </template>
 

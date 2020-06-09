@@ -1,10 +1,10 @@
 <template>
   <div class="router-view grid cards-page">
-    <LeadLink size="small" title="My Cards" />
-    <LeadLink size="big" title="Buy Card Packs" />
-    <LeadLink size="small" title="Scout" />
-    <LeadLink size="small" title="Card Slots" />
-    <LeadLink size="small" title="Card Collection" />
+    <LeadLink size="small" title="My Cards" path="my-cards" />
+    <LeadLink size="big" title="Buy Card Packs" path="buy-cards" />
+    <LeadLink size="small" title="Scout" path="scout" />
+    <LeadLink size="small" title="Card Slots" path="slots" />
+    <LeadLink size="small" title="Card Collection" path="collection" />
   </div>
 </template>
 
