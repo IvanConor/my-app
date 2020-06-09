@@ -28,12 +28,13 @@
     .notifications {
         position: absolute;
         top: 3rem;
-        left: 0;
+        right: 50%;
         width: 10rem;
         background-color: $black;
         border: 2px solid $blue-dark;
         border-radius: 0.5rem;
         text-align: center;
+        transform: translateX(50%);
         z-index: 1;
     }
 }
