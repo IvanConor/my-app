@@ -1,8 +1,28 @@
 <div class="nav-left">
-  <ReturnBtn v-if="pageName !== 'Home'" @return="emitReturn" />
+  <!-- return btn -->
+  <IconBtn
+    v-if="pageName !== 'Home'"
+    :source="imgReturn"
+    classNames="rounded bg-black"
+    @return="emitReturn" />
   <ul class="quicklinks">
-    <li v-if="pageName !== 'Home'"><router-link to="/">Home</router-link></li>
-    <li>Notifications</li>
+    <!-- home btn -->
+    <li v-if="pageName !== 'Home'">
+      <router-link to="/">
+        <IconBtn
+          :source="imgHome"
+          classNames="rounded bg-black" />
+      </router-link>
+    </li>
+    <!-- notification btn -->
+    <li>
+      <IconBtn
+        :source="imgNotification"
+        classNames="rounded bg-black" />
+    </li>
   </ul>
-  <div class="next-bonus">Next Bonus</div>
+  <!-- next bonus -->
+  <div class="next-bonus">
+    <span>Next Bonus</span>
+  </div>
 </div>

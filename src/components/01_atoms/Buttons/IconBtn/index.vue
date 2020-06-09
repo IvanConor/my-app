@@ -2,7 +2,11 @@
 
 <script>
 export default {
-  name: 'ReturnBtn',
+  name: 'IconBtn',
+  props: {
+    source: String,
+    classNames: String,
+  },
   methods: {
     emitClick: function() {
       this.$emit('return')

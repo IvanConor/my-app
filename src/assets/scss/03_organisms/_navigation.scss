@@ -29,9 +29,17 @@
 
 .nav-center {
     flex: 1;
-    background-color: $black;
     text-align: center;
     height: 3rem;
+
+    .page-name {
+        padding: 0.75rem;
+        margin: 0;
+        margin-top: 0.25rem;
+        background-color: $black;
+        border-radius: 0.5rem;
+        line-height: 1rem;
+    }
 }
 
 .nav-right {
@@ -47,14 +55,16 @@
     width: 2.5rem;
     height: 2.5rem;
     text-align: center;
-    background-color: $yellow-dark;
     cursor: pointer;
 }
 
 .quicklinks {
     display: inline-block;
+    height: 2.5rem;
     li {
         display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
         margin-left: 1rem;
     }
 }
@@ -62,13 +72,21 @@
 .next-bonus {
     display: inline-block;
     position: absolute;
-    right: 0;
+    right: 1rem;
     top: 50%;
     transform: translateY(-50%);
+    span {
+        padding: 0.25rem 0.75rem;
+        background-color: $black;
+        border-radius: 0.5rem;
+    }
 }
 
 .cash, .coins {
     display: inline-block;
+    margin-left: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: $black;
     text-align: center;
-    width: 50%;
 }

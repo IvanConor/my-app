@@ -11,4 +11,24 @@
         width: 1rem;
         transform: translate(-50%, -50%);
     }
+
+    &.rounded {
+        border-radius: 50%;
+    }
+
+    &.bg-black {
+        background-color: $black;
+    }
+
+    &.bg-white {
+        background-color: $white;
+    }
+
+    &.bg-blue {
+        background-color: $blue-dark;
+    }
+
+    &.bg-yellow {
+        background-color: $yellow-dark;
+    }
 }
