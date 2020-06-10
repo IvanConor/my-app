@@ -10,10 +10,18 @@ const reduceCash = (context, payload) => {
 const reduceCoins = (context, payload) => {
     context.commit('reduceCoins', payload);
 };
+const changeClubName = (context, payload) => {
+    context.commit('changeClubName', payload);
+};
+const changeEmblem = (context, payload) => {
+    context.commit('changeEmblem', payload);
+};
 
 export default {
     addCash,
     addCoins,
     reduceCash,
-    reduceCoins
+    reduceCoins,
+    changeClubName,
+    changeEmblem
 };

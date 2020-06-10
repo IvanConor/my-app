@@ -26,7 +26,6 @@ import Collection from '../views/cardsviews/Collection.vue'
 // division routes
 import Match from '../views/divisionviews/Match.vue'
 import Leaderboards from '../views/divisionviews/Leaderboards.vue'
-import DivisionStars from '../views/divisionviews/DivisionStars.vue'
 import MatchResults from '../views/divisionviews/MatchResults.vue'
 // extras routes
 import Profile from '../views/extrasviews/Profile.vue'
@@ -148,11 +147,6 @@ const routes = [
     path: '/leaderboards',
     name: 'Leaderboards',
     component: Leaderboards,
-  },
-  {
-    path: '/division-stars',
-    name: 'DivisionStars',
-    component: DivisionStars,
   },
   {
     path: '/match-results',

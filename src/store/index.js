@@ -10,7 +10,9 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     cash: 0,
-    coins: 0
+    coins: 0,
+    clubName: 'My Club',
+    emblem: 'emblem-1'
   },
   actions,
   mutations,
