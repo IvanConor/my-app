@@ -1,7 +1,7 @@
 <template src="./template.html"></template>
 
 <script>
-import IconBtn from '@/components/01_atoms/Buttons/IconBtn/index';
+import IconBtn from '@/components/01_atoms/Icons/IconBtn/index';
 
 export default {
   name: 'NavLeft',

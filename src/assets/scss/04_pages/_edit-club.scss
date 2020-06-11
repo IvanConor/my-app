@@ -1,0 +1,52 @@
+.emblem-wrapper {
+    display: none;
+}
+
+.emblem-change-wrapper {
+    position: relative;
+    width: 50vw;
+    height: 30vh;
+    margin: 0 auto;
+    background-color: $blue-dark;
+    text-align: center;
+
+    .icon-wrapper {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        img {
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+
+    .icon-left {
+        left: 1rem;
+    }
+
+    .icon-right { 
+        right: 1rem;
+    }
+}
+
+.emblem-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .svg-wrapper {
+        position: relative;
+        height: 20vh;
+        width: 20vh;
+
+        img {
+            position: absolute;
+            left: 50%;
+            height: 100%;
+            width: auto;
+            transform: translateX(-50%);
+        }
+    }
+}

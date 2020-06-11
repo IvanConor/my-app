@@ -6,11 +6,13 @@ export default {
   data() {
     return {
       selectedEmblem: '',
-    }
-  },
-  methods: {
-    emitSelect: function() {
-      this.$emit('selectEmblem', this.selectedEmblem)
+      emblems: [
+        { name: 'emblem-1', value: 'Emblem 1' },
+        { name: 'emblem-2', value: 'Emblem 2' },
+        { name: 'emblem-3', value: 'Emblem 3' },
+        { name: 'emblem-4', value: 'Emblem 4' },
+        { name: 'emblem-5', value: 'Emblem 5' }
+      ]
     }
   },
   created() {
