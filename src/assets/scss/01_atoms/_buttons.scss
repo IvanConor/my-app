@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem 1rem 3rem;
+    border: 1px solid $white;
+    border-radius: 0.5rem;
+    background-color: $blue-dark;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $blue-dark;
+        background-color: $white;
+        color: $blue-dark;
+    }
+}

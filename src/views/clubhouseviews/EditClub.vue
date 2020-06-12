@@ -1,20 +1,21 @@
 <template>
-  <div class="router-view">
-    <div class="club-name">
-      <p>Club Name</p>
+  <div class="router-view edit-club-page">
+    <div class="club-name-wrapper">
+      <h3>Club Name</h3>
       <input type="text" v-model="newClubName">
     </div>
     <Emblem @slideChange="updateEmblem" />
-    <button @click="saveChanges()">Save Changes</button>
+    <Button btnText="Save Changes" @buttonclick="saveChanges()" />
   </div>
 </template>
 
 <script>
 import Emblem from '@/components/02_molecules/Emblem/index';
+import Button from '@/components/01_atoms/Buttons/Button/index';
 
 export default {
   name: 'EditClub',
-  components: { Emblem },
+  components: { Emblem, Button },
   data() {
     return {
       newClubName: '',
