@@ -1,11 +1,10 @@
-<div class="emblem-wrapper">
-  <label for="emblem">Club Emblem</label>
-  <select name="emblem" id="emblem" v-model="selectedEmblem">
-    <option
-      v-for="emblem in emblems"
-      :key="emblem.name"
-      :value="emblem.name">
-      {{ emblem.value }}
-    </option>
-  </select>
+<div class="emblem-change-wrapper">
+  <h3>Club Emblem</h3>
+  <div class="icon-wrapper icon-left">
+    <Icon :source="iconPaths.arrowLeft" @iconclick="changeSlide('left')" />
+  </div>
+  <div class="icon-wrapper icon-right">
+    <Icon :source="iconPaths.arrowRight" @iconclick="changeSlide('right')" />
+  </div>
+  <EmblemIcon :emblem="emblem" />
 </div>

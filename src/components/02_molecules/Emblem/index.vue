@@ -1,22 +1,42 @@
 <template src="./template.html"></template>
 
 <script>
+import EmblemIcon from '@/components/01_atoms/Icons/EmblemIcon/index';
+import Icon from '@/components/01_atoms/Icons/Icon/index';
+
 export default {
   name: 'Emblem',
+  components: { EmblemIcon, Icon },
   data() {
     return {
-      selectedEmblem: '',
-      emblems: [
-        { name: 'emblem-1', value: 'Emblem 1' },
-        { name: 'emblem-2', value: 'Emblem 2' },
-        { name: 'emblem-3', value: 'Emblem 3' },
-        { name: 'emblem-4', value: 'Emblem 4' },
-        { name: 'emblem-5', value: 'Emblem 5' }
-      ]
+      emblem: '',
+      iconPaths: {
+        arrowLeft: require("@/assets/images/icons/arrow-left.svg"),
+        arrowRight: require("@/assets/images/icons/arrow-right.svg")
+      }
     }
   },
+  methods: {
+    changeSlide: function(direction) {
+      let numString = this.emblem.replace( /^\D+/g, '');
+      if(direction === 'left') {
+        if(numString === '1') {
+          numString = 6;
+        }
+        numString--;
+        this.emblem = this.emblem.replace( /\d/g, numString);
+      } else {
+        if(numString === '5') {
+          numString = 0;
+        }
+        numString++;
+        this.emblem = this.emblem.replace( /\d/g, numString);
+      }
+      this.$emit('slideChange', this.emblem)
+    },
+  },
   created() {
-    this.selectedEmblem = this.$store.getters.getEmblem
+    this.emblem = this.$store.getters.getEmblem
   }
 }
 </script>

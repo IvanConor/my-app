@@ -8,7 +8,6 @@ import Divisions from '../views/Divisions.vue'
 import Promo from '../views/Promo.vue'
 import Extras from '../views/Extras.vue'
 import Error from '../views/Error.vue'
-import Example from '../views/Example.vue'
 // clubhouse routes
 import Training from '../views/clubhouseviews/Training.vue'
 import Tactics from '../views/clubhouseviews/Tactics.vue'
@@ -69,11 +68,6 @@ const routes = [
     path: '*',
     name: 'Error',
     component: Error
-  },
-  {
-    path: '/example',
-    name: 'Example',
-    component: Example
   },
   // clubhouse routes
   {
