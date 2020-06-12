@@ -2,9 +2,15 @@
 
 <script>
 export default {
-  name: 'Icon',
+  name: 'SvgIcon',
   props: {
-    source: String
+    icon: String,
+    classNames: String
+  },
+  computed: {
+    iconPath: function() {
+      return require(`@/assets/images/icons/${this.icon}.svg`);
+    }
   },
   methods: {
     emitClick: function() {

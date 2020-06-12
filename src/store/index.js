@@ -1,21 +1,22 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import VuexPersistence from 'vuex-persist';
+import state from './state';
 import actions from './actions';
 import mutations from './mutations';
 import getters from './getters';
+import VuexPersistence from 'vuex-persist';
+
+const vuexPersist = new VuexPersistence({
+  key: 'Club Manager 2019 Clone',
+  storage: localStorage,
+})
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-    cash: 0,
-    coins: 0,
-    clubName: 'My Club',
-    emblem: 'emblem-1'
-  },
+  state,
   actions,
   mutations,
   getters,
-  plugins: [new VuexPersistence().plugin]
+  plugins: [vuexPersist.plugin]
 })

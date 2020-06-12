@@ -1,31 +1,28 @@
 <template src="./template.html"></template>
 
 <script>
-import IconBtn from '@/components/01_atoms/Icons/IconBtn/index';
+import SvgIcon from '@/components/01_atoms/Icons/SvgIcon/index';
 
 export default {
   name: 'NavLeft',
-  components: { IconBtn },
+  components: { SvgIcon },
   props: {
     pageName: String
-  },
-  data() {
-    return {
-      imgPaths: {
-        imgReturn: require("@/assets/images/icons/return_white.svg"),
-        imgHome: require("@/assets/images/icons/home_white.svg"),
-        imgNotification: require("@/assets/images/icons/notification_white.svg")
-      },
-      toggleNotifications: false
-    }
   },
   methods: {
     goBack: function() {
       this.$router.go(-1);
     },
     showNotifications: function() {
-      this.toggleNotifications = !this.toggleNotifications;
-    }
+      if(this.$store.getters.getNotifications === false) {
+        this.$store.dispatch('showNotifications')
+      } else {
+        this.$store.dispatch('hideNotifications')
+      }
+    },
+  },
+  created() {
+    this.$store.dispatch('hideNotifications')
   }
 }
 </script>

@@ -2,18 +2,14 @@
 
 <script>
 import EmblemIcon from '@/components/01_atoms/Icons/EmblemIcon/index';
-import Icon from '@/components/01_atoms/Icons/Icon/index';
+import SvgIcon from '@/components/01_atoms/Icons/SvgIcon/index';
 
 export default {
   name: 'Emblem',
-  components: { EmblemIcon, Icon },
+  components: { EmblemIcon, SvgIcon },
   data() {
     return {
-      emblem: '',
-      iconPaths: {
-        arrowLeft: require("@/assets/images/icons/arrow-left.svg"),
-        arrowRight: require("@/assets/images/icons/arrow-right.svg")
-      }
+      emblem: ''
     }
   },
   methods: {

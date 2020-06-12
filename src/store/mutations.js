@@ -16,6 +16,12 @@ const changeClubName = (state, payload) => {
 const changeEmblem = (state, payload) => {
     state.emblem = payload
 };
+const showNotifications = state => {
+    state.notifications = true
+};
+const hideNotifications = state => {
+    state.notifications = false
+};
   
 export default {
     addCash,
@@ -23,5 +29,7 @@ export default {
     reduceCash,
     reduceCoins,
     changeClubName,
-    changeEmblem
+    changeEmblem,
+    showNotifications,
+    hideNotifications
 };

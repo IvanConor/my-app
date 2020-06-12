@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from '../store'
 // main routes
 import Home from '../views/Home.vue'
 import ClubHouse from '../views/ClubHouse.vue'
@@ -167,6 +168,12 @@ const routes = [
 
 const router = new VueRouter({
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  console.log(to, from);
+  store.dispatch('hideNotifications')
+  .then(next());
 })
 
 export default router

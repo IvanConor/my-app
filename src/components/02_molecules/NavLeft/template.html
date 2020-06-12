@@ -3,8 +3,8 @@
   <a
     v-if="pageName !== 'Home'"
     class="go-back">
-    <IconBtn
-      :source="imgPaths.imgReturn"
+    <SvgIcon
+      icon="return_white"
       classNames="rounded bg-black"
       @iconclick="goBack" />
   </a>
@@ -12,17 +12,15 @@
     <!-- home btn -->
     <li v-if="pageName !== 'Home'">
       <router-link to="/">
-        <IconBtn
-          :source="imgPaths.imgHome"
-          classNames="rounded bg-black" />
+        <SvgIcon icon="home_white" classNames="rounded bg-black" />
       </router-link>
     </li>
     <!-- notification btn -->
     <li class="notifications-wrapper" @click="showNotifications">
-      <IconBtn
-        :source="imgPaths.imgNotification"
+      <SvgIcon
+        icon="notification_white"
         classNames="rounded bg-black" />
-      <div v-if="toggleNotifications" class="notifications">
+      <div v-if="this.$store.getters.getNotifications" @click="showNotifications" class="notifications">
         <p>Notification 1</p>
         <p>Notification 2</p>
         <p>Notification 3</p>

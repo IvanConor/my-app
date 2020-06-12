@@ -16,6 +16,12 @@ const changeClubName = (context, payload) => {
 const changeEmblem = (context, payload) => {
     context.commit('changeEmblem', payload);
 };
+const showNotifications = context => {
+    context.commit('showNotifications');
+};
+const hideNotifications = context => {
+    context.commit('hideNotifications');
+};
 
 export default {
     addCash,
@@ -23,5 +29,7 @@ export default {
     reduceCash,
     reduceCoins,
     changeClubName,
-    changeEmblem
+    changeEmblem,
+    showNotifications,
+    hideNotifications
 };

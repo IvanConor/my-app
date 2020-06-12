@@ -18,22 +18,22 @@ export default {
   data() {
     return {
       newClubName: '',
-      emblem: '',
+      newEmblem: '',
     }
   },
   methods: {
     saveChanges: function() {
       this.$store.dispatch('changeClubName', this.newClubName)
-      .then(this.$store.dispatch('changeEmblem', this.emblem))
+      .then(this.$store.dispatch('changeEmblem', this.newEmblem))
       .then(this.$router.push('club-house'));
     },
     updateEmblem: function(val) {
-      this.emblem = val;
+      this.newEmblem = val;
     }
   },
   created() {
     this.newClubName = this.$store.getters.getClubName
-    this.emblem = this.$store.getters.getEmblem
+    this.newEmblem = this.$store.getters.getEmblem
   }
 }
 </script>
