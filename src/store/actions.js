@@ -22,6 +22,12 @@ const showNotifications = context => {
 const hideNotifications = context => {
     context.commit('hideNotifications');
 };
+const increaseTeamChemistry = (context, payload) => {
+    context.commit('increaseTeamChemistry', payload);
+};
+const decreaseTeamChemistry = context => {
+    context.commit('decreaseTeamChemistry');
+};
 
 export default {
     addCash,
@@ -31,5 +37,7 @@ export default {
     changeClubName,
     changeEmblem,
     showNotifications,
-    hideNotifications
+    hideNotifications,
+    increaseTeamChemistry,
+    decreaseTeamChemistry
 };

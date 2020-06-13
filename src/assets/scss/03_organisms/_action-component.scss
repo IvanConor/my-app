@@ -1,0 +1,45 @@
+.action-component {
+
+    .team-chemistry {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        width: 10vw;
+        padding: 0.5rem;
+        background-color: $blue;
+        border-radius: 1rem;
+        box-shadow: inset 0px 0px 0 0.25rem $white;
+        text-align: center;
+
+        .number, .image {
+            display: block;
+            height: 5vw;
+            width: 100%;
+            font-size: 3rem;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30vw;
+        height: 30vw;
+        transform: translate(-50%, -50%);
+        img {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 30vw;
+            height: 30vw;
+            transform: none;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+        width: calc(100% - 4rem);
+    }
+}

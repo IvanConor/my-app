@@ -1,0 +1,10 @@
+<div class="action-component">
+  <div class="inner-container">
+    <div class="team-chemistry">
+      <span class="number">{{ this.$store.getters.getTeamChemistry }}</span>
+      <span class="text">Team Chemistry</span>
+    </div>
+    <SvgIcon icon="airplane" />
+    <Button btnText="Go on a training camp" @buttonclick="goToTrainingCamp()" />
+  </div>
+</div>

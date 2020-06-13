@@ -3,5 +3,6 @@ export default ({
     coins: 300,
     clubName: 'My Club',
     emblem: 'emblem-1',
-    notifications: false    
+    notifications: false,
+    teamChemistry: 50
 });

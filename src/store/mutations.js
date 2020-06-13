@@ -22,6 +22,12 @@ const showNotifications = state => {
 const hideNotifications = state => {
     state.notifications = false
 };
+const increaseTeamChemistry = (state, payload) => {
+    state.teamChemistry = state.teamChemistry + payload
+};
+const decreaseTeamChemistry = (state, payload) => {
+    state.teamChemistry = state.teamChemistry - payload
+};
   
 export default {
     addCash,
@@ -31,5 +37,7 @@ export default {
     changeClubName,
     changeEmblem,
     showNotifications,
-    hideNotifications
+    hideNotifications,
+    increaseTeamChemistry,
+    decreaseTeamChemistry
 };

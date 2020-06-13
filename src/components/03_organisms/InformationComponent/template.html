@@ -1,0 +1,27 @@
+<div class="information-component">
+  <div class="inner-container">
+    <div class="lead-text">
+      <p>Go on a training camp to prepare your team for the upcoming match in the best possible way.</p>
+    </div>
+    <div class="list-title">
+      <h3>BENEFITS</h3>
+    </div>
+    <div class="list-text-element">
+      <div class="icon-left team-chemistry">
+        <span class="number">{{ this.$store.getters.getTeamChemistry }}</span>
+        <span class="text">Team Chemistry</span>
+      </div>
+      <div class="text-wrapper">
+        <p>Training camps immediately improve your Team Chemistry, helpful when it's not at an optimal level.</p>
+      </div>
+    </div>
+    <div class="list-text-element">
+      <div class="icon-left">
+        <EmblemIcon :emblem="this.$store.getters.getEmblem" />
+      </div>
+      <div class="text-wrapper">
+        <p>Your team will be more focused and you'll stand a better chance of winning the next match!</p>
+      </div>
+    </div>
+  </div>
+</div>

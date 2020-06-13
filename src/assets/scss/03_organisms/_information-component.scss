@@ -1,0 +1,35 @@
+.information-component {
+
+    .lead-text {
+        margin-bottom: 5rem;
+    }
+
+    .list-text-element {
+        position: relative;
+        padding: 3rem 0 3rem 8rem;
+
+        .icon-left {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 8vw;
+            transform: translateY(-50%);
+        }
+    }
+
+    .team-chemistry {
+        position: absolute;
+        padding: 0.5rem;
+        background-color: $blue;
+        border-radius: 1rem;
+        box-shadow: inset 0px 0px 0 0.25rem $white;
+        text-align: center;
+
+        .number {
+            display: block;
+            height: 5vw;
+            width: 100%;
+            font-size: 3rem;
+        }
+    }
+}
