@@ -18,4 +18,11 @@
         background: $blue-dark;
         overflow: hidden;
     }
+    
+    .plane-flight {
+        .icon {
+            transition: all 2s ease-in;
+            transform: translate(100%, 100%);
+        }
+    }
 }

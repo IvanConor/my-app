@@ -4,7 +4,9 @@
       <span class="number">{{ this.$store.getters.getTeamChemistry }}</span>
       <span class="text">Team Chemistry</span>
     </div>
-    <SvgIcon icon="airplane" />
+    <div class="plane-wrapper" :class="{ 'plane-flight' : planeAnimation }">
+      <SvgIcon icon="airplane" />
+    </div>
     <Button btnText="Go on a training camp" @buttonclick="goToTrainingCamp()" />
   </div>
 </div>
