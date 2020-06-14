@@ -1,0 +1,106 @@
+.scout-page {
+
+    .inner-container {
+        grid-column: span 4;
+        grid-row: span 4;
+        padding: 0.5rem;
+        background: rgba($color: $black, $alpha: 0.5);
+    }
+
+    .content {
+        position: relative;
+        height: 100%;
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    .img-wrapper {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .icon {
+            width: 50vw;
+            max-width: 36rem;
+            height: auto;
+        }
+        img {
+            position: relative;
+            top: unset;
+            left: unset;
+            width: 50vw;
+            max-width: 36rem;
+            height: auto;
+            transform: none;
+        }
+    }
+
+    .text-cloud {
+        position: relative;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        width: calc(50vw - 3rem);
+        padding: 3rem;
+        background-color: $blue;
+        border-radius: 0.5rem;
+        p {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: 100%;
+            top: 75%;
+            width: 0;
+            height: 0;
+            border-top: 13px solid transparent;
+            border-left: 26px solid $blue;
+            border-bottom: 13px solid transparent;
+        }
+    }
+
+    .player-positions {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: calc(50vw - 3rem);
+        margin-top: 5rem;
+        margin-left: 3rem;
+        li {
+            padding: 1rem 1.5rem;
+            background-color: $black;
+            color: $black;
+            border: 1px solid $white;
+            border-radius: 0.5rem;
+            opacity: 0.5;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+            &:nth-child(1) {
+                .position-wrapper {
+                    background-color: yellow;
+                }
+            }
+            &:nth-child(2) {
+                .position-wrapper {
+                    background-color: $blue-dark;
+                }
+            }
+            &:nth-child(3) {
+                .position-wrapper {
+                    background-color: green;
+                }
+            }
+            &:nth-child(4) {
+                .position-wrapper {
+                    background-color: red;
+                }
+            }
+        }
+        .position-wrapper {
+            border-radius: 1rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+}
