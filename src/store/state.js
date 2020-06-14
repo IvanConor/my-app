@@ -4,5 +4,6 @@ export default ({
     clubName: 'My Club',
     emblem: 'emblem-1',
     notifications: false,
-    teamChemistry: 50
+    teamChemistry: 50,
+    slots: 1000
 });

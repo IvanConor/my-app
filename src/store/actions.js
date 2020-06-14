@@ -28,6 +28,9 @@ const increaseTeamChemistry = (context, payload) => {
 const decreaseTeamChemistry = context => {
     context.commit('decreaseTeamChemistry');
 };
+const increaseSlots = context => {
+    context.commit('increaseSlots');
+};
 
 export default {
     addCash,
@@ -39,5 +42,6 @@ export default {
     showNotifications,
     hideNotifications,
     increaseTeamChemistry,
-    decreaseTeamChemistry
+    decreaseTeamChemistry,
+    increaseSlots
 };

@@ -1,0 +1,45 @@
+.slots-page {
+    .inner-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .content {
+        padding: 1rem;
+        background-color: $blue-dark;
+        border-radius: 1rem;
+    }
+
+    .top-part, .bottom-part {
+        position: relative;
+        padding: 1rem;
+        background: $black;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        h3 {
+            margin: 0;
+            padding-right: 8rem;
+        }
+        .current-slots {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .bottom-part {
+        margin-bottom: 0;
+        h3 {
+            padding: 0;
+            padding-bottom: 1rem;
+        }
+        .btn {
+            display: block;
+            width: 80%;
+            margin: 1rem auto;
+        }
+    }
+}

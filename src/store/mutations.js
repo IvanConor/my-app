@@ -28,6 +28,9 @@ const increaseTeamChemistry = (state, payload) => {
 const decreaseTeamChemistry = (state, payload) => {
     state.teamChemistry = state.teamChemistry - payload
 };
+const increaseSlots = state => {
+    state.slots = state.slots + 5
+};
   
 export default {
     addCash,
@@ -39,5 +42,6 @@ export default {
     showNotifications,
     hideNotifications,
     increaseTeamChemistry,
-    decreaseTeamChemistry
+    decreaseTeamChemistry,
+    increaseSlots
 };
