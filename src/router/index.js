@@ -6,7 +6,6 @@ import Home from '../views/Home.vue'
 import ClubHouse from '../views/ClubHouse.vue'
 import Cards from '../views/Cards.vue'
 import Divisions from '../views/Divisions.vue'
-import Promo from '../views/Promo.vue'
 import Extras from '../views/Extras.vue'
 import Error from '../views/Error.vue'
 // clubhouse routes
@@ -54,11 +53,6 @@ const routes = [
     path: '/divisions',
     name: 'Divisions',
     component: Divisions
-  },
-  {
-    path: '/promo',
-    name: 'Promo',
-    component: Promo
   },
   {
     path: '/extras',

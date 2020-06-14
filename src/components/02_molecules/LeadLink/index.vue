@@ -6,7 +6,19 @@ export default {
   props: {
     size: String,
     path: String,
-    title: String
+    title: String,
+    text: String,
+    background: String,
+    sideimage: String,
+    sideimagetext: String
+  },
+  computed: {
+    backgroundImage: function() {
+      return require(`@/assets/images/backgrounds/${this.background}.jpg`);
+    },
+    sideImage: function() {
+      return require(`@/assets/images/${this.sideimage}.svg`);
+    }
   },
 }
 </script>

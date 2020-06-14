@@ -3,6 +3,16 @@
   :class="size">
   <div class="lead-link-inner">
     <router-link class="anchor" :to="'/'+path"></router-link>
-    {{ title !== undefined ? title : 'Default title' }}
+    <img class="bg-image" v-if="background !== undefined" :src="backgroundImage" alt="Background">
+    <div class="content-wrapper">
+      <div class="title">
+        <h3>{{ title }}</h3>
+      </div>
+      <img class="side-image" v-if="sideimage !== undefined" :src="sideImage" alt="Side Image">
+      <div class="side-image-text">
+        <p>{{ sideimagetext }}</p>
+      </div>
+      <p>{{ text }}</p>
+    </div>
   </div>
 </div>

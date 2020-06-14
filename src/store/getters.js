@@ -5,6 +5,8 @@ const getEmblem = state => state.emblem;
 const getNotifications = state => state.notifications;
 const getTeamChemistry = state => state.teamChemistry;
 const getSlots = state => state.slots;
+const getDivision = state => state.division;
+const getCards = state => state.cards;
 
 export default {
   getCash,
@@ -13,5 +15,7 @@ export default {
   getEmblem,
   getNotifications,
   getTeamChemistry,
-  getSlots
+  getSlots,
+  getDivision,
+  getCards
 };
