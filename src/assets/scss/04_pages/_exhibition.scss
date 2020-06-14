@@ -1,0 +1,23 @@
+.exhibition-page {
+    .text-button-component, .information-component {
+        grid-column: span 2;
+        padding: 0.5rem;
+    }
+
+    .text-button-component {
+        grid-row: span 2;
+    }
+
+    .information-component {
+        grid-row: span 4;
+    }
+
+    .inner-container {
+        position: relative;
+        height: 100%;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        background: $blue-dark;
+        overflow: hidden;
+    }
+}

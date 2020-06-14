@@ -1,7 +1,7 @@
 <template>
   <div class="router-view grid camp-page">
     <ActionComponent />
-    <InformationComponent />
+    <InformationComponent leadText="Go on a training camp to prepare your team for the upcoming match in the best possible way." />
   </div>
 </template>
 

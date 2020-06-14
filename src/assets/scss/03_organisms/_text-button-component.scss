@@ -1,0 +1,18 @@
+.text-button-component {
+
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .text-wrapper {
+        width: 50%;
+        text-align: center;
+    }
+
+    .btn {
+        width: 50%;
+    }
+}

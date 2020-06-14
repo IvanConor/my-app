@@ -16,9 +16,11 @@
 @import '03_organisms/navigation';
 @import '03_organisms/action-component';
 @import '03_organisms/information-component';
+@import '03_organisms/text-button-component';
 
 // pages
 @import '04_pages/router-view';
 @import '04_pages/home';
 @import '04_pages/edit-club';
 @import '04_pages/camp';
+@import '04_pages/exhibition';
