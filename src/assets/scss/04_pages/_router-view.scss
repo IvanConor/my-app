@@ -1,6 +1,9 @@
 .router-view {
     height: 100vh;
     padding-top: $router-top-padding;
+    background: url('assets/images/backgrounds/main_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .grid {

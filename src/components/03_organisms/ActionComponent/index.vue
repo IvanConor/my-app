@@ -9,7 +9,9 @@ export default {
   components: { Button, SvgIcon },
   data() {
     return {
-      planeAnimation: false
+      planeFlying: false,
+      planeOutside: false,
+      planeLanding: false,
     }
   },
   computed: {
@@ -20,11 +22,19 @@ export default {
   methods: {
     goToTrainingCamp: function() {
       let self = this;
-      this.planeAnimation = true;
-      this.$store.dispatch('increaseTeamChemistry', 2);
+      this.planeFlying = true;
+      this.$store.dispatch('increaseTeamChemistry', 0);
       setTimeout(function() {
-        self.planeAnimation = false;
+        self.planeOutside = true;
+        self.planeFlying = false;
+      }, 1500)
+      setTimeout(function() {
+        self.planeLanding = true;
+        self.planeOutside = false;
       }, 2000)
+      setTimeout(function() {
+        self.planeLanding = false;
+      }, 3500)
     }
   }
 }

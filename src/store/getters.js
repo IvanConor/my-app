@@ -7,6 +7,9 @@ const getTeamChemistry = state => state.teamChemistry;
 const getSlots = state => state.slots;
 const getDivision = state => state.division;
 const getCards = state => state.cards;
+const getInTraining = state => state.inTraining;
+const getTrainingSlots = state => state.trainingSlots;
+const getTeamStrength = state => state.team.strength;
 
 export default {
   getCash,
@@ -17,5 +20,8 @@ export default {
   getTeamChemistry,
   getSlots,
   getDivision,
-  getCards
+  getCards,
+  getInTraining,
+  getTrainingSlots,
+  getTeamStrength
 };

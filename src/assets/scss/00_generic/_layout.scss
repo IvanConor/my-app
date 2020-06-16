@@ -1,6 +1,7 @@
 body {
     color: $white;
-    background: url('assets/images/backgrounds/main_bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: $black;
 }

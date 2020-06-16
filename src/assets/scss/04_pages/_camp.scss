@@ -15,14 +15,26 @@
         position: relative;
         height: 100%;
         border-radius: 0.5rem;
-        background: $blue-dark;
+        background: $black;
         overflow: hidden;
     }
     
-    .plane-flight {
+    .plane-flying {
         .icon {
-            transition: all 2s ease-in;
+            transition: all 1.5s ease-in;
             transform: translate(100%, 100%);
+        }
+    }
+    .plane-outside {
+        .icon {
+            transition: none;
+            transform: translate(-200%, -200%);
+        }
+    }
+    .plane-landing {
+        .icon {
+            transition: all 1.5s ease-out;
+            transform: translate(-50%, -50%);
         }
     }
 }

@@ -14,6 +14,7 @@
 
         .title {
             position: relative;
+            padding-top: 1rem;
             text-align: center;
             z-index: 3;
         }
@@ -22,9 +23,20 @@
             position: absolute;
             left: 1rem;
             top: 50%;
-            width: 5rem;
+            width: 8rem;
             z-index: 3;
             transform: translateY(-50%);
+        }
+
+        .side-image-text {
+            position: absolute;
+            bottom: 2rem;
+            left: 1rem;
+            width: 8rem;
+            text-align: center;
+            p {
+                font-size: 3rem;
+            }
         }
 
         .text {
@@ -60,6 +72,21 @@
         }
     }
 
+    &.tiny {
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 0.5rem;
+        }
+
+        .side-image {
+            width: 5rem;
+        }
+    }
+
     .lead-link-inner {
         overflow: hidden;
     }
@@ -87,6 +114,7 @@
     .content-wrapper {
         position: relative;
         height: 100%;
+        z-index: 1;
 
         h3, p {
             margin: 0;
