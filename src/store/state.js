@@ -28,7 +28,6 @@ export default ({
             title: 'The Wallet',
             text: 'Purchase Manager Coins',
             reward: 150,
-            progressBar: {},
             completed: false
         }
     ]

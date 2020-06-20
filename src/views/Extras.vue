@@ -12,7 +12,7 @@
       path="achievements"
       text="View your achievements and try completing as many of them as possible!"
       sideimage='icons/achievement'
-      :sideimagetext="this.$store.getters.getCompletedAchievements + '/' + this.$store.getters.getAchievements" />
+      :sideimagetext="this.$store.getters.getCompletedAchievements.length + '/' + this.$store.getters.getAchievements.length" />
     <LeadLink
       size="tiny"
       title="Settings"

@@ -1,0 +1,12 @@
+<div class="achievement">
+  <div class="achievement-inner">
+    <h3 class="title">{{ title }}</h3>
+    <p class="text">{{ text }}</p>
+    <div v-if="progressBar" class="progress-bar-wrapper">
+      <div class="progress-bar-inner">{{ progressBar.current }}/{{ progressBar.goal }}</div>
+    </div>
+    <div class="reward-wrapper">
+      <p>REWARD: {{ reward }}</p>
+    </div>
+  </div>
+</div>

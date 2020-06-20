@@ -4,7 +4,8 @@
       size="big"
       title="Club House"
       path="club-house"
-      :sideimage='"emblems/" + emblem' :sideimagetext="this.$store.getters.getTeamStrength" />
+      :sideimage='"emblems/" + emblem'
+      :sideimagetext="String(this.$store.getters.getTeamStrength)" />
     <LeadLink
       size="small"
       title="Cards"
