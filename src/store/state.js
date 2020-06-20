@@ -13,6 +13,23 @@ export default ({
     team: {
         strength: 65
     },
-    achievements: 215,
-    completedAchievements: 10
+    achievements: [
+        {
+            title: 'Slot Machine',
+            text: 'Upgrade your card slots to 35.',
+            reward: 20,
+            progressBar: {
+                goal: 35,
+                current: 0,
+            },
+            completed: false
+        },
+        {
+            title: 'The Wallet',
+            text: 'Purchase Manager Coins',
+            reward: 150,
+            progressBar: {},
+            completed: false
+        }
+    ]
 });

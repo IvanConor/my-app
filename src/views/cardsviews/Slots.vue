@@ -8,8 +8,12 @@
         </div>
         <div class="bottom-part">
           <h3>Upgrade to {{ this.$store.getters.getSlots + 5 }} card slots?</h3>
-          <Button btnText="500" @buttonclick="increaseSlots('cash')" />
-          <Button btnText="13" @buttonclick="increaseSlots('coins')" />
+          <Button
+            btnText="500"
+            @buttonclick="increaseSlots('cash')" />
+          <Button
+            btnText="13"
+            @buttonclick="increaseSlots('coins')" />
         </div>
       </div>
     </div>
@@ -25,10 +29,8 @@ export default {
   methods: {
     increaseSlots: function(means) {
       if(means === 'coins') {
-        console.log('increase with coins');
         this.$store.dispatch('increaseSlots')
       } else {
-        console.log('increase with cash');
         this.$store.dispatch('increaseSlots')
       }
     }

@@ -1,29 +1,28 @@
 // generic
-@import '00_generic/variables';
-@import '00_generic/mixins';
-@import '00_generic/reset';
-@import '00_generic/layout';
+@import 'components/00_generic/variables';
+@import 'components/00_generic/mixins';
+@import 'components/00_generic/reset';
+@import 'components/00_generic/layout';
 
 // atoms
-@import '01_atoms/icons';
-@import '01_atoms/buttons';
-@import '01_atoms/inputs';
+@import 'components/01_atoms/icons';
+@import 'components/01_atoms/buttons';
+@import 'components/01_atoms/inputs';
 
 // molecules
-@import '02_molecules/lead-link';
+@import 'components/02_molecules/lead-link';
 
 // organisms
-@import '03_organisms/navigation';
-@import '03_organisms/action-component';
-@import '03_organisms/information-component';
-@import '03_organisms/text-button-component';
+@import 'components/03_organisms/navigation';
+@import 'components/03_organisms/action-component';
+@import 'components/03_organisms/information-component';
+@import 'components/03_organisms/text-button-component';
 
 // pages
-@import '04_pages/router-view';
-@import '04_pages/home';
-@import '04_pages/clubhouse';
-@import '04_pages/edit-club';
-@import '04_pages/camp';
-@import '04_pages/exhibition';
-@import '04_pages/scout';
-@import '04_pages/slots';
+@import 'components/04_pages/router-view';
+@import 'components/04_pages/home';
+@import 'components/04_pages/edit-club';
+@import 'components/04_pages/camp';
+@import 'components/04_pages/exhibition';
+@import 'components/04_pages/scout';
+@import 'components/04_pages/slots';

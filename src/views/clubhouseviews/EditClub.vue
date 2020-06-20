@@ -4,8 +4,11 @@
       <h3>Club Name</h3>
       <input type="text" v-model="newClubName">
     </div>
-    <Emblem @slideChange="updateEmblem" />
-    <Button btnText="Save Changes" @buttonclick="saveChanges()" />
+    <Emblem
+      @slideChange="updateEmblem" />
+    <Button
+      btnText="Save Changes"
+      @buttonclick="saveChanges()" />
   </div>
 </template>
 

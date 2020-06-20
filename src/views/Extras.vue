@@ -1,8 +1,23 @@
 <template>
   <div class="router-view grid extras-page">
-    <LeadLink size="small" title="My Profile" path="profile" sideimage='icons/profile' text="View your own profile, statistics and more!" />
-    <LeadLink size="small" title="Achievements" path="achievements" text="View your achievements and try completing as many of them as possible!" sideimage='icons/achievement' :sideimagetext="this.$store.getters.getCompletedAchievements + '/' + this.$store.getters.getAchievements" />
-    <LeadLink size="tiny" title="Settings" path="settings" sideimage='icons/settings' />
+    <LeadLink
+      size="small"
+      title="My Profile"
+      path="profile"
+      text="View your own profile, statistics and more!"
+      sideimage='icons/profile' />
+    <LeadLink
+      size="small"
+      title="Achievements"
+      path="achievements"
+      text="View your achievements and try completing as many of them as possible!"
+      sideimage='icons/achievement'
+      :sideimagetext="this.$store.getters.getCompletedAchievements + '/' + this.$store.getters.getAchievements" />
+    <LeadLink
+      size="tiny"
+      title="Settings"
+      path="settings"
+      sideimage='icons/settings' />
   </div>
 </template>
 

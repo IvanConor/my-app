@@ -20,7 +20,8 @@
           </li>
         </ul>
         <div class="img-wrapper">
-          <SvgIcon icon="scout" />
+          <SvgIcon
+            icon="scout" />
         </div>
       </div>
     </div>
