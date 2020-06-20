@@ -12,5 +12,7 @@ export default ({
     trainingSlots: 1,
     team: {
         strength: 65
-    }
+    },
+    achievements: 215,
+    completedAchievements: 10
 });

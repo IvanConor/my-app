@@ -10,6 +10,8 @@ const getCards = state => state.cards;
 const getInTraining = state => state.inTraining;
 const getTrainingSlots = state => state.trainingSlots;
 const getTeamStrength = state => state.team.strength;
+const getAchievements = state => state.achievements;
+const getCompletedAchievements = state => state.completedAchievements;
 
 export default {
   getCash,
@@ -23,5 +25,7 @@ export default {
   getCards,
   getInTraining,
   getTrainingSlots,
-  getTeamStrength
+  getTeamStrength,
+  getAchievements,
+  getCompletedAchievements
 };
