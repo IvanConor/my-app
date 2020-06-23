@@ -2,12 +2,18 @@
 
 <script>
 import EmblemIcon from '@/components/01_atoms/Icons/EmblemIcon/index';
+import SvgIcon from '@/components/01_atoms/Icons/SvgIcon/index';
 
 export default {
   name: 'InformationComponent',
-  components: { EmblemIcon },
+  components: { EmblemIcon, SvgIcon },
   props: {
-    leadText: String
+    leadText: String,
+    cards: Boolean,
+    cash: Boolean,
+    chemistry: Boolean,
+    trophies: Boolean,
+    team: Boolean
   },
   computed: {
     getTeamChemistry: function () {

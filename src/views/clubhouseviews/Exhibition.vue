@@ -5,7 +5,10 @@
       textBtn="Play"
       @buttonclick="goToExhibition()" />
     <InformationComponent
-      leadText="Play exhibition matches in order to test your team & tactics against others." />
+      leadText="Play exhibition matches in order to test your team & tactics against others:"
+      cards
+      cash
+      chemistry />
     <TextButtonComponent
       text="Play an exhibition match using manager coins:"
       textBtn="100"

@@ -1,19 +1,51 @@
 .information-component {
 
-    .lead-text {
-        margin-bottom: 5rem;
+    p {
+        font-size: 0.75rem;
+    }
+
+    .lead-text, .list-title {
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
+        padding-right: 2rem;
+    }
+
+    .list-title {
+        top: 8rem;
+    }
+
+    .list-text-element-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        padding-top: 10rem;
     }
 
     .list-text-element {
         position: relative;
-        padding: 3rem 0 3rem 8rem;
+        padding: 1rem 0 1rem 6rem;
 
         .icon-left {
             position: absolute;
             left: 0;
             top: 50%;
-            width: 10vw;
+            width: 5rem;
             transform: translateY(-50%);
+        }
+
+        .icon {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 5rem;
+            height: 5rem;
+            transform: translateY(-50%);
+            img {
+                width: 5rem;
+                height: 5rem;
+            }
         }
     }
 
@@ -27,9 +59,13 @@
 
         .number {
             display: block;
-            height: 5vw;
+            height: 2rem;
             width: 100%;
-            font-size: 3rem;
+            font-size: 2rem;
+        }
+
+        .text {
+            font-size: 0.75rem;
         }
     }
 }

@@ -6,21 +6,41 @@
     <div class="list-title">
       <h3>BENEFITS</h3>
     </div>
-    <div class="list-text-element">
-      <div class="icon-left team-chemistry">
-        <span class="number">{{ this.$store.getters.getTeamChemistry }}</span>
-        <span class="text">Team Chemistry</span>
+    <div class="list-text-element-wrapper">
+      <div v-if="cards" class="list-text-element">
+        <SvgIcon icon="cards" />
+        <div class="text-wrapper">
+          <p>You'll receive 3 free game cards after each exhibition match.</p>
+        </div>
       </div>
-      <div class="text-wrapper">
-        <p>Training camps immediately improve your Team Chemistry, helpful when it's not at an optimal level.</p>
+      <div v-if="cash" class="list-text-element">
+        <SvgIcon icon="cash" />
+        <div class="text-wrapper">
+          <p>You'll receive Manager Cash after each exhibition match (depending on the match result).</p>
+        </div>
       </div>
-    </div>
-    <div class="list-text-element">
-      <div class="icon-left">
-        <EmblemIcon :emblem="this.$store.getters.getEmblem" />
+      <div v-if="chemistry" class="list-text-element">
+        <div class="icon-left team-chemistry">
+          <span class="number">{{ this.$store.getters.getTeamChemistry }}</span>
+          <span class="text">Team Chemistry</span>
+        </div>
+        <div class="text-wrapper">
+          <p>Training camps immediately improve your Team Chemistry, helpful when it's not at an optimal level.</p>
+        </div>
       </div>
-      <div class="text-wrapper">
-        <p>Your team will be more focused and you'll stand a better chance of winning the next match!</p>
+      <div v-if="team" class="list-text-element">
+        <div class="icon-left">
+          <EmblemIcon :emblem="this.$store.getters.getEmblem" />
+        </div>
+        <div class="text-wrapper">
+          <p>Your team will be more focused and you'll stand a better chance of winning the next match!</p>
+        </div>
+      </div>
+      <div v-if="trophies" class="list-text-element">
+        <SvgIcon icon="trophy" />
+        <div class="text-wrapper">
+          <p>Win Trophies in the weekly leaderboard competition!</p>
+        </div>
       </div>
     </div>
   </div>

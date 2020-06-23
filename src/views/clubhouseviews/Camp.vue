@@ -2,7 +2,9 @@
   <div class="router-view grid camp-page">
     <ActionComponent />
     <InformationComponent
-      leadText="Go on a training camp to prepare your team for the upcoming match in the best possible way." />
+      leadText="Go on a training camp to prepare your team for the upcoming match in the best possible way."
+      chemistry
+      team />
   </div>
 </template>
 
