@@ -1,0 +1,35 @@
+.profile-page {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    .left-content, .right-content {
+        float: left;
+        height: 100%;
+        padding: 0.5rem 0;
+        border-radius: 1rem;
+    }
+    .left-content {
+        width: 40%;
+    }
+    .right-content {
+        width: 60%;
+    }
+    .inner-content {
+        height: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: $black;
+    }
+    .profile-icon {
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        text-align: center;
+        .icon {
+            width: 20vw;
+            height: 20vw;
+            img {
+                width: 20vw;
+                height: 20vw;
+            }
+        }
+    }
+}

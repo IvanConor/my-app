@@ -1,0 +1,23 @@
+.icon-text-wrapper {
+    display: flex;
+    align-items: center;
+    .text-wrapper {
+        width: 100%;
+    }
+    .big-text, .small-text {
+        margin: 0;
+        padding: 0.25rem 0;
+    }
+    .small-text {
+        color: $blue;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+    }
+    .icon {
+        margin: 0.5rem;
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}

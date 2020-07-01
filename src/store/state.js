@@ -4,6 +4,7 @@ export default ({
     coins: 300,
     clubName: 'My Club',
     managerName: 'My Manager',
+    managerCountry: 'Serbia',
     emailAddress: 'my@mail.com',
     emblem: 'emblem-1',
     notifications: false,

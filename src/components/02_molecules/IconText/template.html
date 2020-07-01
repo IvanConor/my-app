@@ -1,0 +1,7 @@
+<div class="icon-text-wrapper" :class="classNames">
+  <SvgIcon v-if="iconName" :icon="iconName" />
+  <div class="text-wrapper">
+    <p v-if="bigText" class="big-text">{{ bigText }}</p>
+    <p v-if="smallText" class="small-text">{{ smallText }}</p>
+  </div>
+</div>
