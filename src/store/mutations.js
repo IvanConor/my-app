@@ -31,6 +31,15 @@ const decreaseTeamChemistry = (state, payload) => {
 const increaseSlots = state => {
     state.slots = state.slots + 5
 };
+const changeManagerName = (state, payload) => {
+    state.managerName = payload
+};
+const changeEmailAddress = (state, payload) => {
+    state.emailAddress = payload
+};
+const changeLanguage = (state, payload) => {
+    state.language = payload
+};
   
 export default {
     addCash,
@@ -43,5 +52,8 @@ export default {
     hideNotifications,
     increaseTeamChemistry,
     decreaseTeamChemistry,
-    increaseSlots
+    increaseSlots,
+    changeManagerName,
+    changeEmailAddress,
+    changeLanguage
 };

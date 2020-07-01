@@ -1,7 +1,10 @@
 export default ({
+    language: 'English',
     cash: 10000,
     coins: 300,
     clubName: 'My Club',
+    managerName: 'My Manager',
+    emailAddress: 'my@mail.com',
     emblem: 'emblem-1',
     notifications: false,
     teamChemistry: 50,

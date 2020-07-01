@@ -31,6 +31,15 @@ const decreaseTeamChemistry = context => {
 const increaseSlots = context => {
     context.commit('increaseSlots');
 };
+const changeManagerName = (context, payload) => {
+    context.commit('changeManagerName', payload);
+};
+const changeEmailAddress = (context, payload) => {
+    context.commit('changeEmailAddress', payload);
+};
+const changeLanguage = (context, payload) => {
+    context.commit('changeLanguage', payload);
+};
 
 export default {
     addCash,
@@ -43,5 +52,8 @@ export default {
     hideNotifications,
     increaseTeamChemistry,
     decreaseTeamChemistry,
-    increaseSlots
+    increaseSlots,
+    changeManagerName,
+    changeEmailAddress,
+    changeLanguage
 };

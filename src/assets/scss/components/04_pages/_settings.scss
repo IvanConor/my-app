@@ -1,0 +1,45 @@
+.settings-page {
+    text-align: center;
+    
+    .manager-name-wrapper, .manager-email-wrapper, .language-wrapper {
+        position: relative;
+        float: left;
+        width: 46%;
+        height: 30vh;
+        margin: 10vh 2% 2rem;
+        background-color: $black;
+        border-radius: 1rem;
+        text-align: center;
+    
+        .icon-wrapper {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            img {
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+    
+        .icon-left {
+            left: 1rem;
+        }
+    
+        .icon-right { 
+            right: 1rem;
+        }
+
+        input {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .btn {
+        margin-top: 5rem;
+    }
+}
