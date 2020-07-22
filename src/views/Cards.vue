@@ -6,7 +6,7 @@
       path="my-cards"
       text="Manage your cards and card slots."
       sideimage='icons/cards'
-      :sideimagetext="this.$store.getters.getCards + '/' + this.$store.getters.getSlots" />
+      :sideimagetext="this.$store.getters.getClub.cards + '/' + this.$store.getters.getClub.slots" />
     <LeadLink
       size="big"
       title="Buy Card Packs"

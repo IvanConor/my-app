@@ -1,0 +1,9 @@
+.text-left-right-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: $blue-dark;
+    border-radius: 0.5rem;
+}

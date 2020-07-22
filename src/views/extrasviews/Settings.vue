@@ -6,11 +6,11 @@
     </div>
     <div class="manager-email-wrapper">
       <h3>Email Address</h3>
-      <input type="text" :value="emailAddress">
+      <input type="text" v-model="emailAddress">
     </div>
     <div class="language-wrapper">
       <h3>Game Language:</h3>
-      <input type="text" :value="language">
+      <input type="text" v-model="language">
     </div>
     <Button
       btnText="Save Changes"
@@ -40,9 +40,9 @@ export default {
     },
   },
   created() {
-    this.newManagerName = this.$store.getters.getManagerName
-    this.emailAddress = this.$store.getters.getEmailAddress
-    this.language = this.$store.getters.getLanguage
+    this.newManagerName = this.$store.getters.getManager.name
+    this.emailAddress = this.$store.getters.getSettings.email
+    this.language = this.$store.getters.getSettings.language
   }
 }
 </script>

@@ -9,11 +9,8 @@ export default {
   name: 'Navigation',
   components: { NavLeft, NavCenter, NavRight },
   computed: {
-    getCash: function () {
-      return this.$store.getters.getCash
-    },
-    getCoins: function () {
-      return this.$store.getters.getCoins
+    getClub: function () {
+      return this.$store.getters.getClub
     },
     currentPage() {
       return this.$route.name;

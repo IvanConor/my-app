@@ -6,12 +6,12 @@
       path="training"
       text="Raise your players to a higher level by training them."
       sideimage="icons/training"
-      :sideimagetext="this.$store.getters.getInTraining + '/' + this.$store.getters.getTrainingSlots" />
+      :sideimagetext="this.$store.getters.getClub.inTraining + '/' + this.$store.getters.getClub.trainingSlots" />
     <LeadLink
       size="big"
       title="Tactical Plan"
       path="tactics"
-      :sideimage='"emblems/" + emblem' :sideimagetext="String(this.$store.getters.getTeamStrength)" />
+      :sideimage='"emblems/" + emblem' :sideimagetext="String(this.$store.getters.getTeam.strength)" />
     <LeadLink
       size="small"
       title="Exhibition"

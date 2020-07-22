@@ -1,17 +1,17 @@
 const addCash = (state, payload) => {
-    state.cash = state.cash + payload
+    state.club.cash = state.club.cash + payload
 };
 const addCoins = (state, payload) => {
-    state.coins = state.coins + payload
+    state.club.coins = state.club.coins + payload
 };
 const reduceCash = (state, payload) => {
-    state.cash = state.cash - payload
+    state.club.cash = state.club.cash - payload
 };
 const reduceCoins = (state, payload) => {
-    state.coins = state.coins - payload
+    state.club.coins = state.club.coins - payload
 };
 const changeClubName = (state, payload) => {
-    state.clubName = payload
+    state.club.name = payload
 };
 const changeEmblem = (state, payload) => {
     state.emblem = payload
@@ -29,16 +29,16 @@ const decreaseTeamChemistry = (state, payload) => {
     state.teamChemistry = state.teamChemistry - payload
 };
 const increaseSlots = state => {
-    state.slots = state.slots + 5
+    state.club.slots = state.club.slots + 5
 };
 const changeManagerName = (state, payload) => {
-    state.managerName = payload
+    state.manager.name = payload
 };
 const changeEmailAddress = (state, payload) => {
-    state.emailAddress = payload
+    state.settings.email = payload
 };
 const changeLanguage = (state, payload) => {
-    state.language = payload
+    state.settings.language = payload
 };
   
 export default {

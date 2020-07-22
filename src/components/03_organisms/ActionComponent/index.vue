@@ -16,7 +16,7 @@ export default {
   },
   computed: {
     getTeamChemistry: function () {
-      return this.$store.getters.getTeamChemistry
+      return this.$store.getters.getTeam.chemistry
     }
   },
   methods: {

@@ -36,7 +36,7 @@ export default {
     }
   },
   created() {
-    this.newClubName = this.$store.getters.getClubName
+    this.newClubName = this.$store.getters.getClub.name
     this.newEmblem = this.$store.getters.getEmblem
   }
 }

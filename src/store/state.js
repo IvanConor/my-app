@@ -1,21 +1,34 @@
 export default ({
-    language: 'English',
-    cash: 10000,
-    coins: 300,
-    clubName: 'My Club',
-    managerName: 'My Manager',
-    managerCountry: 'Serbia',
-    emailAddress: 'my@mail.com',
-    emblem: 'emblem-1',
+    manager: {
+        name: 'My Manager',
+        country: 'Serbia',
+    },
+    settings: {
+        language: 'English',
+        email: 'my@mail.com',
+    },
+    club: {
+        name: 'My Club',
+        emblem: 'emblem-1',
+        cash: 10000,
+        coins: 300,
+        slots: 1000,
+        cards: 18,
+        trainingSlots: 1,
+        inTraining: 0,
+        trophies: 0,
+        matchesPlayed: 0,
+        matchesWon: 0,
+        matchesDrawn: 0,
+        matchesLost: 0,
+        goalsScored: 0,
+        goalsConceded: 0,
+        division: 12,
+    },
     notifications: false,
-    teamChemistry: 50,
-    slots: 1000,
-    division: 12,
-    cards: 18,
-    inTraining: 0,
-    trainingSlots: 1,
     team: {
-        strength: 65
+        strength: 65,
+        chemistry: 50
     },
     achievements: [
         {

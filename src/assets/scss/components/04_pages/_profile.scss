@@ -12,11 +12,15 @@
     }
     .right-content {
         width: 60%;
+        .inner-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
     }
     .inner-content {
         height: 100%;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem;
         background-color: $black;
     }
     .profile-icon {

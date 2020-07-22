@@ -1,5 +1,5 @@
 <div class="nav">
   <NavLeft :pageName="currentPage" :class="{'home-page' : currentPage === 'Home'}" />
   <NavCenter :pageName="currentPage" />
-  <NavRight :cash="getCash" :coins="getCoins" />
+  <NavRight :cash="getClub.cash" :coins="getClub.coins" />
 </div>

@@ -5,12 +5,12 @@
       size="small"
       title="Division Match"
       path="match"
-      text="Play Division matches and earn promotion to higher Divisions. Obtain Trophies and rewards to improve your club." :sideimagetext="String(this.$store.getters.getDivision)" />
+      text="Play Division matches and earn promotion to higher Divisions. Obtain Trophies and rewards to improve your club." :sideimagetext="String(this.$store.getters.getClub.division)" />
     <LeadLink
       size="big"
       title="Tactical Plan"
       path="tactics"
-      :sideimage='"emblems/" + emblem' :sideimagetext="String(this.$store.getters.getTeamStrength)" />
+      :sideimage='"emblems/" + emblem' :sideimagetext="String(this.$store.getters.getTeam.strength)" />
     <LeadLink
       size="small"
       title="Leaderboards"

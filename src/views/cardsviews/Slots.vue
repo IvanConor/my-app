@@ -4,10 +4,10 @@
       <div class="content">
         <div class="top-part">
           <h3>Current cards slots:</h3>
-          <div class="current-slots">{{ this.$store.getters.getSlots }}</div>
+          <div class="current-slots">{{ this.$store.getters.getClub.slots }}</div>
         </div>
         <div class="bottom-part">
-          <h3>Upgrade to {{ this.$store.getters.getSlots + 5 }} card slots?</h3>
+          <h3>Upgrade to {{ this.$store.getters.getClub.slots + 5 }} card slots?</h3>
           <Button
             btnText="500"
             @buttonclick="increaseSlots('cash')" />
