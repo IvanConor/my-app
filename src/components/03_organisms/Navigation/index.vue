@@ -9,9 +9,6 @@ export default {
   name: 'Navigation',
   components: { NavLeft, NavCenter, NavRight },
   computed: {
-    getClub: function () {
-      return this.$store.getters.getClub
-    },
     currentPage() {
       return this.$route.name;
     }

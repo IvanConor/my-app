@@ -14,11 +14,6 @@ export default {
     chemistry: Boolean,
     trophies: Boolean,
     team: Boolean
-  },
-  computed: {
-    getTeamChemistry: function () {
-      return this.$store.getters.getTeam.chemistry
-    }
   }
 }
 </script>

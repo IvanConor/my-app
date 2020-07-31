@@ -14,16 +14,11 @@ export default {
       planeLanding: false,
     }
   },
-  computed: {
-    getTeamChemistry: function () {
-      return this.$store.getters.getTeam.chemistry
-    }
-  },
   methods: {
     goToTrainingCamp: function() {
       let self = this;
       this.planeFlying = true;
-      this.$store.dispatch('increaseTeamChemistry', 0);
+      this.$store.dispatch('updateTeamChemistry', 0);
       setTimeout(function() {
         self.planeOutside = true;
         self.planeFlying = false;

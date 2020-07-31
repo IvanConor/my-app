@@ -29,9 +29,9 @@ export default {
   methods: {
     increaseSlots: function(means) {
       if(means === 'coins') {
-        this.$store.dispatch('increaseSlots')
+        this.$store.dispatch('updateSlots')
       } else {
-        this.$store.dispatch('increaseSlots')
+        this.$store.dispatch('updateSlots')
       }
     }
   }

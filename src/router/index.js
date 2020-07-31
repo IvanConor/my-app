@@ -165,7 +165,7 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  store.dispatch('hideNotifications')
+  store.dispatch('toggleNotifications', false)
   .then(next());
 })
 

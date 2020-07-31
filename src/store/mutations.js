@@ -1,34 +1,22 @@
-const addCash = (state, payload) => {
+const updateCash = (state, payload) => {
     state.club.cash = state.club.cash + payload
 };
-const addCoins = (state, payload) => {
+const updateCoins = (state, payload) => {
     state.club.coins = state.club.coins + payload
-};
-const reduceCash = (state, payload) => {
-    state.club.cash = state.club.cash - payload
-};
-const reduceCoins = (state, payload) => {
-    state.club.coins = state.club.coins - payload
 };
 const changeClubName = (state, payload) => {
     state.club.name = payload
 };
 const changeEmblem = (state, payload) => {
-    state.emblem = payload
+    state.club.emblem = payload
 };
-const showNotifications = state => {
-    state.notifications = true
+const toggleNotifications = (state, payload) => {
+    state.notifications = payload
 };
-const hideNotifications = state => {
-    state.notifications = false
+const updateTeamChemistry = (state, payload) => {
+    state.team.chemistry = state.team.chemistry + payload
 };
-const increaseTeamChemistry = (state, payload) => {
-    state.teamChemistry = state.teamChemistry + payload
-};
-const decreaseTeamChemistry = (state, payload) => {
-    state.teamChemistry = state.teamChemistry - payload
-};
-const increaseSlots = state => {
+const updateSlots = state => {
     state.club.slots = state.club.slots + 5
 };
 const changeManagerName = (state, payload) => {
@@ -42,17 +30,13 @@ const changeLanguage = (state, payload) => {
 };
   
 export default {
-    addCash,
-    addCoins,
-    reduceCash,
-    reduceCoins,
+    updateCash,
+    updateCoins,
     changeClubName,
     changeEmblem,
-    showNotifications,
-    hideNotifications,
-    increaseTeamChemistry,
-    decreaseTeamChemistry,
-    increaseSlots,
+    toggleNotifications,
+    updateTeamChemistry,
+    updateSlots,
     changeManagerName,
     changeEmailAddress,
     changeLanguage

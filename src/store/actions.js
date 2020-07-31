@@ -1,14 +1,8 @@
-const addCash = (context, payload) => {
-    context.commit('addCash', payload);
+const updateCash = (context, payload) => {
+    context.commit('updateCash', payload);
 };
-const addCoins = (context, payload) => {
-    context.commit('addCoins', payload);
-};
-const reduceCash = (context, payload) => {
-    context.commit('reduceCash', payload);
-};
-const reduceCoins = (context, payload) => {
-    context.commit('reduceCoins', payload);
+const updateCoins = (context, payload) => {
+    context.commit('updateCash', payload);
 };
 const changeClubName = (context, payload) => {
     context.commit('changeClubName', payload);
@@ -16,20 +10,14 @@ const changeClubName = (context, payload) => {
 const changeEmblem = (context, payload) => {
     context.commit('changeEmblem', payload);
 };
-const showNotifications = context => {
-    context.commit('showNotifications');
+const toggleNotifications = (context, payload) => {
+    context.commit('toggleNotifications', payload);
 };
-const hideNotifications = context => {
-    context.commit('hideNotifications');
+const updateTeamChemistry = (context, payload) => {
+    context.commit('updateTeamChemistry', payload);
 };
-const increaseTeamChemistry = (context, payload) => {
-    context.commit('increaseTeamChemistry', payload);
-};
-const decreaseTeamChemistry = context => {
-    context.commit('decreaseTeamChemistry');
-};
-const increaseSlots = context => {
-    context.commit('increaseSlots');
+const updateSlots = context => {
+    context.commit('updateSlots');
 };
 const changeManagerName = (context, payload) => {
     context.commit('changeManagerName', payload);
@@ -42,17 +30,13 @@ const changeLanguage = (context, payload) => {
 };
 
 export default {
-    addCash,
-    addCoins,
-    reduceCash,
-    reduceCoins,
+    updateCash,
+    updateCoins,
     changeClubName,
     changeEmblem,
-    showNotifications,
-    hideNotifications,
-    increaseTeamChemistry,
-    decreaseTeamChemistry,
-    increaseSlots,
+    toggleNotifications,
+    updateTeamChemistry,
+    updateSlots,
     changeManagerName,
     changeEmailAddress,
     changeLanguage

@@ -13,16 +13,16 @@ export default {
     goBack: function() {
       this.$router.go(-1);
     },
-    showNotifications: function() {
-      if(this.$store.getters.getNotifications === false) {
-        this.$store.dispatch('showNotifications')
+    toggleNotifications: function() {
+      if(this.$store.getters.getNotifications) {
+        this.$store.dispatch('toggleNotifications', false)
       } else {
-        this.$store.dispatch('hideNotifications')
+        this.$store.dispatch('toggleNotifications', true)
       }
     },
   },
   created() {
-    this.$store.dispatch('hideNotifications')
+    this.$store.dispatch('toggleNotifications', false)
   }
 }
 </script>
