@@ -7,7 +7,8 @@ export default {
     title: String,
     text: String,
     reward: Number,
-    progressBar: Object
+    progressBar: Object,
+    isComplete: Boolean
   },
 }
 </script>

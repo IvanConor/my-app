@@ -1,15 +1,21 @@
 .achievement {
     display: inline-block;
     width: 50%;
-    height: 40vh;
+    height: 33vh;
     padding: 0.5rem;
+
+    &.completed {
+        .achievement-inner {
+            background-color: $green-dark;
+        }
+    }
 
     .achievement-inner {
         position: relative;
         height: 100%;
         width: 100%;
         padding: 0.5rem;
-        background-color: $black;
+        background-color: $blue-dark;
         border-radius: 1rem;
         overflow: hidden;
     }
@@ -42,7 +48,7 @@
         width: 100%;
         height: 10vh;
         padding: 0 1rem;
-        background-color: $blue-dark;
+        background-color: $black;
         p {
             font-size: 2rem;
         }

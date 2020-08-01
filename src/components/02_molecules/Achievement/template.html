@@ -1,4 +1,6 @@
-<div class="achievement">
+<div
+  class="achievement"
+  :class="{ completed: isComplete }">
   <div class="achievement-inner">
     <h3 class="title">{{ title }}</h3>
     <p class="text">{{ text }}</p>

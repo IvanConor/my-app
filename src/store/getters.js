@@ -5,7 +5,8 @@ const getEmblem = state => state.emblem;
 const getNotifications = state => state.notifications;
 const getTeam = state => state.team;
 const getAchievements = state => state.achievements;
-const getCompletedAchievements = state => state.achievements.filter(el => el.completed);
+const getCompleteAchievements = state => state.achievements.filter(el => el.completed);
+const getIncompleteAchievements = state => state.achievements.filter(el => !el.completed);
 
 export default {
   getManager,
@@ -15,5 +16,6 @@ export default {
   getNotifications,
   getTeam,
   getAchievements,
-  getCompletedAchievements
+  getCompleteAchievements,
+  getIncompleteAchievements
 };

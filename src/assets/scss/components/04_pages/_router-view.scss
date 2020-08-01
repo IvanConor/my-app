@@ -4,6 +4,8 @@
     background: url('assets/images/backgrounds/main_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .grid {
