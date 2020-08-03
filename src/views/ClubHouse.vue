@@ -55,7 +55,7 @@ export default {
     }
   },
   created() {
-    this.emblem = this.$store.getters.getEmblem;
+    this.emblem = this.$store.getters.getClub.emblem;
   }
 }
 </script>

@@ -21,7 +21,7 @@
           classNames="achievements"
           iconName="achievement"
           bigText="ACHIEVEMENTS"
-          :smallText="this.$store.getters.getCompletedAchievements.length + '/' + this.$store.getters.getAchievements.length"
+          :smallText="this.$store.getters.getCompleteAchievements.length + '/' + this.$store.getters.getAchievements.length"
           />
         <IconText
           classNames="club-strength"

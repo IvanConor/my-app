@@ -1,5 +1,5 @@
 <template>
-  <div class="router-view achievements page">
+  <div class="router-view achievements-page">
     <div class="achievements-progress">
       <SvgIcon icon="achievement" />
       <div class="achievements-progress-content">

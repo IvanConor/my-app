@@ -5,7 +5,10 @@
     <h3 class="title">{{ title }}</h3>
     <p class="text">{{ text }}</p>
     <div v-if="progressBar" class="progress-bar-wrapper">
-      <div class="progress-bar-inner">{{ progressBar.current }}/{{ progressBar.goal }}</div>
+      <div class="progress-bar">
+        <span>{{ progressBar.current }}/{{ progressBar.goal }}</span>
+        <div class="completed-bar" :style="{ width: completedPercentage + '%' }"></div>
+      </div>
     </div>
     <div class="reward-wrapper">
       <p>REWARD: {{ reward }}</p>

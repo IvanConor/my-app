@@ -37,7 +37,7 @@ export default {
   },
   created() {
     this.newClubName = this.$store.getters.getClub.name
-    this.newEmblem = this.$store.getters.getEmblem
+    this.newEmblem = this.$store.getters.getClub.emblem
   }
 }
 </script>

@@ -40,7 +40,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Slot Machine',
@@ -50,7 +51,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Slot Machine',
@@ -60,7 +62,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Slot Machine',
@@ -70,95 +73,110 @@ export default ({
                 goal: 100,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // THE WALLET
         {
             title: 'The Wallet',
             text: 'Purchase Manager Coins.',
             reward: 150,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // REPLACEMENT
         {
             title: 'Replacement',
             text: 'Use another manager from your card inventory to manage your club.',
             reward: 20,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // DIVISION RANKER
         {
             title: 'Division ranker',
             text: 'Rank 1st in a weekly Division competition.',
             reward: 100,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // DIVISION KING
         {
             title: 'Division King',
             text: 'Promote to Division 11 in Divisions.',
             reward: 180,
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Division King',
             text: 'Promote to Division 10 in Divisions.',
             reward: 210,
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division King',
             text: 'Promote to Division 9 in Divisions.',
             reward: 240,
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division King',
             text: 'Promote to Division 8 in Divisions.',
             reward: 270,
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division King',
             text: 'Promote to Division 7 in Divisions.',
             reward: 300,
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division King',
             text: 'Promote to Division 6 in Divisions.',
             reward: 330,
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division King',
             text: 'Promote to Division 5 in Divisions.',
             reward: 360,
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division King',
             text: 'Promote to Division 4 in Divisions.',
             reward: 390,
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division King',
             text: 'Promote to Division 3 in Divisions.',
             reward: 420,
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division King',
             text: 'Promote to Division 2 in Divisions.',
             reward: 450,
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division King',
             text: 'Promote to Division 1 in Divisions.',
             reward: 150,
-            completed: false
+            completed: false,
+            hidden: true
         },
         // DIVISION PLAYER
         {
@@ -169,7 +187,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Division Player',
@@ -179,7 +198,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division Player',
@@ -189,7 +209,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division Player',
@@ -199,7 +220,8 @@ export default ({
                 goal: 100,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division Player',
@@ -209,7 +231,8 @@ export default ({
                 goal: 250,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division Player',
@@ -219,7 +242,8 @@ export default ({
                 goal: 500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division Player',
@@ -229,7 +253,8 @@ export default ({
                 goal: 1000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division Player',
@@ -239,7 +264,8 @@ export default ({
                 goal: 2500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Division Player',
@@ -249,7 +275,8 @@ export default ({
                 goal: 5000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // CARD COLLECTOR
         {
@@ -260,7 +287,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Card Collector',
@@ -270,7 +298,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Card Collector',
@@ -280,7 +309,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Card Collector',
@@ -290,7 +320,8 @@ export default ({
                 goal: 100,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Card Collector',
@@ -300,7 +331,8 @@ export default ({
                 goal: 250,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Card Collector',
@@ -310,7 +342,8 @@ export default ({
                 goal: 500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Card Collector',
@@ -320,7 +353,8 @@ export default ({
                 goal: 1000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Card Collector',
@@ -330,7 +364,8 @@ export default ({
                 goal: 2500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Card Collector',
@@ -340,7 +375,8 @@ export default ({
                 goal: 5000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Card Collector',
@@ -350,21 +386,24 @@ export default ({
                 goal: 10000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // SCOUTING MADNESS
         {
             title: 'Scouting Madness',
             text: 'Buy a player that was discovered by your scout.',
             reward: 20,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // IMPROVE YOUR LOOKS
         {
             title: 'Improve your looks',
             text: 'Change your club emblem.',
             reward: 20,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // TROPHY WINNER
         {
@@ -375,7 +414,8 @@ export default ({
                 goal: 100,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Trophy Winner',
@@ -385,7 +425,8 @@ export default ({
                 goal: 200,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Trophy Winner',
@@ -395,7 +436,8 @@ export default ({
                 goal: 300,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Trophy Winner',
@@ -405,7 +447,8 @@ export default ({
                 goal: 400,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Trophy Winner',
@@ -415,7 +458,8 @@ export default ({
                 goal: 500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // EXHIBITION LEGEND
         {
@@ -426,7 +470,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Exhibition Legend',
@@ -436,7 +481,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Exhibition Legend',
@@ -446,7 +492,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Exhibition Legend',
@@ -456,7 +503,8 @@ export default ({
                 goal: 100,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Exhibition Legend',
@@ -466,7 +514,8 @@ export default ({
                 goal: 250,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Exhibition Legend',
@@ -476,7 +525,8 @@ export default ({
                 goal: 500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Exhibition Legend',
@@ -486,7 +536,8 @@ export default ({
                 goal: 1000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Exhibition Legend',
@@ -496,7 +547,8 @@ export default ({
                 goal: 2500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Exhibition Legend',
@@ -506,7 +558,8 @@ export default ({
                 goal: 5000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Exhibition Legend',
@@ -516,7 +569,8 @@ export default ({
                 goal: 10000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // MAN OF THE MATCHES
         {
@@ -527,7 +581,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Man of the matches',
@@ -537,7 +592,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Man of the matches',
@@ -547,7 +603,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Man of the matches',
@@ -557,7 +614,8 @@ export default ({
                 goal: 100,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Man of the matches',
@@ -567,7 +625,8 @@ export default ({
                 goal: 250,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Man of the matches',
@@ -577,7 +636,8 @@ export default ({
                 goal: 500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Man of the matches',
@@ -587,7 +647,8 @@ export default ({
                 goal: 1000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Man of the matches',
@@ -597,7 +658,8 @@ export default ({
                 goal: 2500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Man of the matches',
@@ -607,7 +669,8 @@ export default ({
                 goal: 5000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Man of the matches',
@@ -617,7 +680,8 @@ export default ({
                 goal: 10000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // MATCH WARRIOR
         {
@@ -628,7 +692,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Match warrior',
@@ -638,7 +703,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Match warrior',
@@ -648,7 +714,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Match warrior',
@@ -658,7 +725,8 @@ export default ({
                 goal: 100,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Match warrior',
@@ -668,7 +736,8 @@ export default ({
                 goal: 250,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Match warrior',
@@ -678,7 +747,8 @@ export default ({
                 goal: 500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Match warrior',
@@ -688,7 +758,8 @@ export default ({
                 goal: 1000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Match warrior',
@@ -698,7 +769,8 @@ export default ({
                 goal: 2500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Match warrior',
@@ -708,7 +780,8 @@ export default ({
                 goal: 5000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Match warrior',
@@ -718,7 +791,8 @@ export default ({
                 goal: 10000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // WINNING STREAK
         {
@@ -729,7 +803,8 @@ export default ({
                 goal: 2,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Winning streak',
@@ -739,7 +814,8 @@ export default ({
                 goal: 3,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Winning streak',
@@ -749,7 +825,8 @@ export default ({
                 goal: 4,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Winning streak',
@@ -759,7 +836,8 @@ export default ({
                 goal: 5,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Winning streak',
@@ -769,7 +847,8 @@ export default ({
                 goal: 6,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Winning streak',
@@ -779,7 +858,8 @@ export default ({
                 goal: 7,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Winning streak',
@@ -789,7 +869,8 @@ export default ({
                 goal: 8,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Winning streak',
@@ -799,7 +880,8 @@ export default ({
                 goal: 9,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Winning streak',
@@ -809,35 +891,40 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // FIT
         {
             title: 'Fit',
             text: 'Recover the stamina of a player using a Stamina Recovery card.',
             reward: 20,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // HEALTHY
         {
             title: 'Healthy',
             text: 'Treat an injured player using an Injury Treatment card.',
             reward: 20,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // GO TO COURT
         {
             title: 'Go to court',
             text: 'Dissolve the suspension of a player using a Perfect Attorney card.',
             reward: 20,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // TRAINING CAMP EXPERT
         {
             title: 'Training camp expert',
             text: 'Prepare yourself for the next match in the best possible way by going on a training camp.',
             reward: 20,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // ENGAGED TRAINER
         {
@@ -848,7 +935,8 @@ export default ({
                 goal: 5,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Focused trainer',
@@ -858,7 +946,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -868,7 +957,8 @@ export default ({
                 goal: 15,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -878,7 +968,8 @@ export default ({
                 goal: 20,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -888,7 +979,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -898,7 +990,8 @@ export default ({
                 goal: 30,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -908,7 +1001,8 @@ export default ({
                 goal: 35,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -918,7 +1012,8 @@ export default ({
                 goal: 40,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -928,7 +1023,8 @@ export default ({
                 goal: 45,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -938,7 +1034,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // FOCUSED TRAINER
         {
@@ -949,7 +1046,8 @@ export default ({
                 goal: 5,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Focused trainer',
@@ -959,7 +1057,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -969,7 +1068,8 @@ export default ({
                 goal: 15,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -979,7 +1079,8 @@ export default ({
                 goal: 20,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -989,7 +1090,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -999,7 +1101,8 @@ export default ({
                 goal: 30,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -1009,7 +1112,8 @@ export default ({
                 goal: 35,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -1019,7 +1123,8 @@ export default ({
                 goal: 40,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -1029,7 +1134,8 @@ export default ({
                 goal: 45,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Focused trainer',
@@ -1039,7 +1145,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // PERFECT STADIUM
         {
@@ -1050,7 +1157,8 @@ export default ({
                 goal: 5,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Perfect stadium',
@@ -1060,7 +1168,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect stadium',
@@ -1070,7 +1179,8 @@ export default ({
                 goal: 15,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect stadium',
@@ -1080,7 +1190,8 @@ export default ({
                 goal: 20,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect stadium',
@@ -1090,7 +1201,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect stadium',
@@ -1100,7 +1212,8 @@ export default ({
                 goal: 30,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect stadium',
@@ -1110,7 +1223,8 @@ export default ({
                 goal: 35,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect stadium',
@@ -1120,7 +1234,8 @@ export default ({
                 goal: 40,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect stadium',
@@ -1130,7 +1245,8 @@ export default ({
                 goal: 45,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect stadium',
@@ -1140,7 +1256,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // PERFECT TRAINING
         {
@@ -1151,7 +1268,8 @@ export default ({
                 goal: 5,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Perfect training',
@@ -1161,7 +1279,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect training',
@@ -1171,7 +1290,8 @@ export default ({
                 goal: 15,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect training',
@@ -1181,7 +1301,8 @@ export default ({
                 goal: 20,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect training',
@@ -1191,7 +1312,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect training',
@@ -1201,7 +1323,8 @@ export default ({
                 goal: 30,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect training',
@@ -1211,7 +1334,8 @@ export default ({
                 goal: 35,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect training',
@@ -1221,7 +1345,8 @@ export default ({
                 goal: 40,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect training',
@@ -1231,7 +1356,8 @@ export default ({
                 goal: 45,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect training',
@@ -1241,7 +1367,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // PERFECT PITCH
         {
@@ -1252,7 +1379,8 @@ export default ({
                 goal: 5,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Perfect pitch',
@@ -1262,7 +1390,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect pitch',
@@ -1272,7 +1401,8 @@ export default ({
                 goal: 15,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect pitch',
@@ -1282,7 +1412,8 @@ export default ({
                 goal: 20,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect pitch',
@@ -1292,7 +1423,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect pitch',
@@ -1302,7 +1434,8 @@ export default ({
                 goal: 30,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect pitch',
@@ -1312,7 +1445,8 @@ export default ({
                 goal: 35,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect pitch',
@@ -1322,7 +1456,8 @@ export default ({
                 goal: 40,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect pitch',
@@ -1332,7 +1467,8 @@ export default ({
                 goal: 45,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect pitch',
@@ -1342,7 +1478,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // PERFECT GYM
         {
@@ -1353,7 +1490,8 @@ export default ({
                 goal: 5,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Perfect gym',
@@ -1363,7 +1501,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect gym',
@@ -1373,7 +1512,8 @@ export default ({
                 goal: 15,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect gym',
@@ -1383,7 +1523,8 @@ export default ({
                 goal: 20,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect gym',
@@ -1393,7 +1534,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect gym',
@@ -1403,7 +1545,8 @@ export default ({
                 goal: 30,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect gym',
@@ -1413,7 +1556,8 @@ export default ({
                 goal: 35,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect gym',
@@ -1423,7 +1567,8 @@ export default ({
                 goal: 40,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect gym',
@@ -1433,7 +1578,8 @@ export default ({
                 goal: 45,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect gym',
@@ -1443,7 +1589,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // PERFECT MANAGER
         {
@@ -1454,7 +1601,8 @@ export default ({
                 goal: 5,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Perfect manager',
@@ -1464,7 +1612,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect manager',
@@ -1474,7 +1623,8 @@ export default ({
                 goal: 15,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect manager',
@@ -1484,7 +1634,8 @@ export default ({
                 goal: 20,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect manager',
@@ -1494,7 +1645,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect manager',
@@ -1504,7 +1656,8 @@ export default ({
                 goal: 30,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect manager',
@@ -1514,7 +1667,8 @@ export default ({
                 goal: 35,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect manager',
@@ -1524,7 +1678,8 @@ export default ({
                 goal: 40,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect manager',
@@ -1534,7 +1689,8 @@ export default ({
                 goal: 45,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Perfect manager',
@@ -1544,7 +1700,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // GOAL-GETTER
         {
@@ -1555,7 +1712,8 @@ export default ({
                 goal: 10,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Goal-getter',
@@ -1565,7 +1723,8 @@ export default ({
                 goal: 25,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Goal-getter',
@@ -1575,7 +1734,8 @@ export default ({
                 goal: 50,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Goal-getter',
@@ -1585,7 +1745,8 @@ export default ({
                 goal: 100,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Goal-getter',
@@ -1595,7 +1756,8 @@ export default ({
                 goal: 250,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Goal-getter',
@@ -1605,7 +1767,8 @@ export default ({
                 goal: 500,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Goal-getter',
@@ -1615,21 +1778,24 @@ export default ({
                 goal: 1000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         // CLEANING SERVICE
         {
             title: 'Cleaning service',
             text: 'Keep a cleen sheet with your team in any match type.',
             reward: 20,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // HAT-TRICK HERO
         {
             title: 'Hat-trick hero',
             text: 'Score a hat-trick with a player.',
             reward: 30,
-            completed: false
+            completed: false,
+            hidden: false
         },
         // SAVINGS
         {
@@ -1640,7 +1806,8 @@ export default ({
                 goal: 10000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: false
         },
         {
             title: 'Savings',
@@ -1650,7 +1817,8 @@ export default ({
                 goal: 25000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Savings',
@@ -1660,7 +1828,8 @@ export default ({
                 goal: 50000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
         {
             title: 'Savings',
@@ -1670,7 +1839,8 @@ export default ({
                 goal: 100000,
                 current: 0,
             },
-            completed: false
+            completed: false,
+            hidden: true
         },
     ]
 });
