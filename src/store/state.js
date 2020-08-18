@@ -13,7 +13,6 @@ export default ({
         cash: 10000,
         coins: 300,
         slots: 1000,
-        cards: 18,
         trainingSlots: 1,
         inTraining: 0,
         trophies: 0,
@@ -30,6 +29,41 @@ export default ({
         strength: 65,
         chemistry: 50
     },
+    cards: [
+        {
+            type: 'training',
+            level: 1
+        },
+        {
+            type: 'stamina',
+            level: 1
+        },
+        {
+            type: 'upgrade',
+            level: 1,
+            purpose: 'stadium'
+        },
+        {
+            type: 'upgrade',
+            level: 1,
+            purpose: 'training'
+        },
+        {
+            type: 'upgrade',
+            level: 1,
+            purpose: 'pitch'
+        },
+        {
+            type: 'upgrade',
+            level: 1,
+            purpose: 'gym'
+        },
+        {
+            type: 'upgrade',
+            level: 1,
+            purpose: 'match'
+        }
+    ],
     achievements: [
         // SLOT MACHINE
         {

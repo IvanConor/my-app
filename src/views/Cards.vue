@@ -41,7 +41,7 @@ export default {
   components: { LeadLink },
   computed: {
     cardsNum: function() {
-      return this.$store.getters.getClub.cards
+      return this.$store.getters.getCards.length
     },
     slotsNum: function() {
       return this.$store.getters.getClub.slots

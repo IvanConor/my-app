@@ -5,7 +5,7 @@
       title="Player Training"
       path="training"
       text="Raise your players to a higher level by training them."
-      sideimage="icons/training"
+      sideimage="icons/player"
       :sideimagetext="playersInTraining + '/' + trainingSlots" />
     <LeadLink
       size="big"

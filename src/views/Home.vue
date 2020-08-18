@@ -19,7 +19,7 @@
       title="Divisions"
       path="divisions"
       text="Play Division matches to earn promotion and collect new cards."
-      :sideimagetext="String(this.$store.getters.getClub.division)" />
+      :sideimagetext="currentDivision" />
     <LeadLink
       size="small"
       title="Extras"
@@ -45,11 +45,14 @@ export default {
       return String(this.$store.getters.getTeam.strength)
     },
     numCards: function() {
-      return this.$store.getters.getClub.cards
+      return this.$store.getters.getCards.length
     },
     numSlots: function() {
       return this.$store.getters.getClub.slots
-    }
+    },
+    currentDivision: function() {
+      return String(this.$store.getters.getClub.division)
+    },
   },
   created() {
     this.emblem = this.$store.getters.getClub.emblem;
