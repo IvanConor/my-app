@@ -9,12 +9,17 @@ export default {
   props: {
     pageName: String
   },
+  computed: {
+    notificationsOpened: function() {
+      return this.$store.getters.getNotifications
+    }
+  },
   methods: {
     goBack: function() {
       this.$router.go(-1);
     },
     toggleNotifications: function() {
-      if(this.$store.getters.getNotifications) {
+      if(this.notificationsOpened) {
         this.$store.dispatch('toggleNotifications', false)
       } else {
         this.$store.dispatch('toggleNotifications', true)

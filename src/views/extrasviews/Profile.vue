@@ -9,7 +9,7 @@
         <IconText
           classNames="country"
           iconName="countries/serbia"
-          :smallText="this.$store.getters.getManager.country"
+          :smallText="managerCountry"
           />
         <IconText
           classNames="membership"
@@ -21,13 +21,13 @@
           classNames="achievements"
           iconName="achievement"
           bigText="ACHIEVEMENTS"
-          :smallText="this.$store.getters.getCompleteAchievements.length + '/' + this.$store.getters.getAchievements.length"
+          :smallText="completedAchievements + '/' + allAchievements"
           />
         <IconText
           classNames="club-strength"
           iconName="field"
           bigText="CLUB STRENGTH"
-          :smallText="String(this.$store.getters.getTeam.strength)"
+          :smallText="teamStrength"
           />
       </div>
     </div>
@@ -35,15 +35,15 @@
       <div class="inner-content">
         <TextLeftRight
           textLeft="Total Trophies:"
-          :textRight="String(this.$store.getters.getClub.trophies)"
+          :textRight="clubTrophies"
           />
         <TextLeftRight
           textLeft="Matches Played:"
-          :textRight="String(this.$store.getters.getClub.matchesPlayed)"
+          :textRight="matchesPlayed"
           />
         <TextLeftRight
           textLeft="W / D / L:"
-          :textRight="String(this.$store.getters.getClub.matchesWon) + ' / ' + String(this.$store.getters.getClub.matchesDrawn) + ' / ' + String(this.$store.getters.getClub.matchesLost)"
+          :textRight="matchesWon + ' / ' + matchesDrawn + ' / ' + matchesLost"
           />
         <TextLeftRight
           textLeft="Win Rate:"
@@ -51,7 +51,7 @@
           />
         <TextLeftRight
           textLeft="Goals scored / conceded:"
-          :textRight="String(this.$store.getters.getClub.goalsScored) + ' / ' + String(this.$store.getters.getClub.goalsConceded)"
+          :textRight="goalsScored + ' / ' + goalsConceded"
           />
       </div>
     </div>
@@ -65,6 +65,41 @@ import TextLeftRight from '@/components/02_molecules/TextLeftRight/index';
 
 export default {
   name: 'Profile',
-  components: { SvgIcon, IconText, TextLeftRight }
+  components: { SvgIcon, IconText, TextLeftRight },
+  computed: {
+    managerCountry: function() {
+      return this.$store.getters.getManager.country
+    },
+    completedAchievements: function() {
+      return this.$store.getters.getCompleteAchievements.length
+    },
+    allAchievements: function() {
+      return this.$store.getters.getAchievements.length
+    },
+    teamStrength: function() {
+      return String(this.$store.getters.getTeam.strength)
+    },
+    clubTrophies: function() {
+      return String(this.$store.getters.getClub.trophies)
+    },
+    matchesPlayed: function() {
+      return String(this.$store.getters.getClub.matchesPlayed)
+    },
+    matchesWon: function() {
+      return String(this.$store.getters.getClub.matchesWon)
+    },
+    matchesDrawn: function() {
+      return String(this.$store.getters.getClub.matchesDrawn)
+    },
+    matchesLost: function() {
+      return String(this.$store.getters.getClub.matchesLost)
+    },
+    goalsScored: function() {
+      return String(this.$store.getters.getClub.goalsScored)
+    },
+    goalsConceded: function() {
+      return String(this.$store.getters.getClub.goalsConceded)
+    },
+  }
 }
 </script>

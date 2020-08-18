@@ -4,10 +4,10 @@
       <div class="content">
         <div class="top-part">
           <h3>Current cards slots:</h3>
-          <div class="current-slots">{{ this.$store.getters.getClub.slots }}</div>
+          <div class="current-slots">{{ numSlots }}</div>
         </div>
         <div class="bottom-part">
-          <h3>Upgrade to {{ this.$store.getters.getClub.slots + 5 }} card slots?</h3>
+          <h3>Upgrade to {{ numSlots + 5 }} card slots?</h3>
           <Button
             btnText="500"
             @buttonclick="increaseSlots('cash')" />
@@ -26,6 +26,11 @@ import Button from '@/components/01_atoms/Buttons/Button/index';
 export default {
   name: 'Slots',
   components: { Button },
+  computed: {
+    numSlots: function() {
+      return this.$store.getters.getClub.slots
+    }
+  },
   methods: {
     increaseSlots: function(means) {
       if(means === 'coins') {

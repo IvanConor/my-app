@@ -6,7 +6,7 @@
       path="my-cards"
       text="Manage your cards and card slots."
       sideimage='icons/cards'
-      :sideimagetext="this.$store.getters.getClub.cards + '/' + this.$store.getters.getClub.slots" />
+      :sideimagetext="cardsNum + '/' + slotsNum" />
     <LeadLink
       size="big"
       title="Buy Card Packs"
@@ -38,6 +38,14 @@ import LeadLink from '@/components/02_molecules/LeadLink/index';
 
 export default {
   name: 'Cards',
-  components: { LeadLink }
+  components: { LeadLink },
+  computed: {
+    cardsNum: function() {
+      return this.$store.getters.getClub.cards
+    },
+    slotsNum: function() {
+      return this.$store.getters.getClub.slots
+    }
+  },
 }
 </script>

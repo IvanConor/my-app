@@ -6,12 +6,12 @@
       path="training"
       text="Raise your players to a higher level by training them."
       sideimage="icons/training"
-      :sideimagetext="this.$store.getters.getClub.inTraining + '/' + this.$store.getters.getClub.trainingSlots" />
+      :sideimagetext="playersInTraining + '/' + trainingSlots" />
     <LeadLink
       size="big"
       title="Tactical Plan"
       path="tactics"
-      :sideimage='"emblems/" + emblem' :sideimagetext="String(this.$store.getters.getTeam.strength)" />
+      :sideimage='"emblems/" + emblem' :sideimagetext="teamStrength" />
     <LeadLink
       size="small"
       title="Exhibition"
@@ -52,6 +52,17 @@ export default {
   data() {
     return {
       emblem: ''
+    }
+  },
+  computed: {
+    playersInTraining: function() {
+      return this.$store.getters.getClub.inTraining
+    },
+    trainingSlots: function() {
+      return this.$store.getters.getClub.trainingSlots
+    },
+    teamStrength: function() {
+      return String(this.$store.getters.getTeam.strength)
     }
   },
   created() {

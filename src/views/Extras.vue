@@ -12,7 +12,7 @@
       path="achievements"
       text="View your achievements and try completing as many of them as possible!"
       sideimage='icons/achievement'
-      :sideimagetext="this.$store.getters.getCompleteAchievements.length + '/' + this.$store.getters.getAchievements.length" />
+      :sideimagetext="completedAchievements + '/' + allAchievements" />
     <LeadLink
       size="tiny"
       title="Settings"
@@ -26,6 +26,14 @@ import LeadLink from '@/components/02_molecules/LeadLink/index';
 
 export default {
   name: 'Extras',
-  components: { LeadLink }
+  components: { LeadLink },
+  computed: {
+    completedAchievements: function() {
+      return this.$store.getters.getCompleteAchievements.length
+    },
+    allAchievements: function() {
+      return this.$store.getters.getAchievements.length
+    }
+  }
 }
 </script>

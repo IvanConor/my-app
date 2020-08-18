@@ -14,6 +14,14 @@ export default {
     chemistry: Boolean,
     trophies: Boolean,
     team: Boolean
-  }
+  },
+  computed: {
+    teamChemistry: function() {
+      return this.$store.getters.getTeam.chemistry
+    },
+    clubEmblem: function() {
+      return this.$store.getters.getClub.emblem
+    }
+  },
 }
 </script>

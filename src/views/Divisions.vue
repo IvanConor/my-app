@@ -5,12 +5,12 @@
       size="small"
       title="Division Match"
       path="match"
-      text="Play Division matches and earn promotion to higher Divisions. Obtain Trophies and rewards to improve your club." :sideimagetext="String(this.$store.getters.getClub.division)" />
+      text="Play Division matches and earn promotion to higher Divisions. Obtain Trophies and rewards to improve your club." :sideimagetext="currentDivision" />
     <LeadLink
       size="big"
       title="Tactical Plan"
       path="tactics"
-      :sideimage='"emblems/" + emblem' :sideimagetext="String(this.$store.getters.getTeam.strength)" />
+      :sideimage='"emblems/" + emblem' :sideimagetext="teamStrength" />
     <LeadLink
       size="small"
       title="Leaderboards"
@@ -40,6 +40,14 @@ export default {
   data() {
     return {
       emblem: ''
+    }
+  },
+  computed: {
+    currentDivision: function() {
+      return String(this.$store.getters.getClub.division)
+    },
+    teamStrength: function() {
+      return String(this.$store.getters.getTeam.strength)
     }
   },
   created() {

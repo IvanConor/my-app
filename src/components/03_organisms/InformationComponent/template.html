@@ -21,7 +21,7 @@
       </div>
       <div v-if="chemistry" class="list-text-element">
         <div class="icon-left team-chemistry">
-          <span class="number">{{ this.$store.getters.getTeam.chemistry }}</span>
+          <span class="number">{{ teamChemistry }}</span>
           <span class="text">Team Chemistry</span>
         </div>
         <div class="text-wrapper">
@@ -30,7 +30,7 @@
       </div>
       <div v-if="team" class="list-text-element">
         <div class="icon-left">
-          <EmblemIcon :emblem="this.$store.getters.getClub.emblem" />
+          <EmblemIcon :emblem="clubEmblem" />
         </div>
         <div class="text-wrapper">
           <p>Your team will be more focused and you'll stand a better chance of winning the next match!</p>

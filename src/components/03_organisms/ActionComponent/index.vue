@@ -14,6 +14,11 @@ export default {
       planeLanding: false,
     }
   },
+  computed: {
+    teamChemistry: function() {
+      return this.$store.getters.getTeam.chemistry
+    }
+  },
   methods: {
     goToTrainingCamp: function() {
       let self = this;

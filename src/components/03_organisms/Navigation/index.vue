@@ -11,6 +11,12 @@ export default {
   computed: {
     currentPage() {
       return this.$route.name;
+    },
+    cashVal() {
+      return this.$store.getters.getClub.cash;
+    },
+    coinsVal() {
+      return this.$store.getters.getClub.coins;
     }
   }
 }

@@ -20,7 +20,7 @@
       <SvgIcon
         icon="notification_white"
         classNames="rounded bg-black" />
-      <div v-if="this.$store.getters.getNotifications" class="notifications">
+      <div v-if="notificationsOpened" class="notifications">
         <p>Notification 1</p>
         <p>Notification 2</p>
         <p>Notification 3</p>
