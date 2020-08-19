@@ -32,36 +32,223 @@ export default ({
     cards: [
         {
             type: 'training',
-            level: 1
+            level: 1,
+            title: 'Training card'
+        },
+        {
+            type: 'training',
+            level: 2,
+            title: 'Training card'
+        },
+        {
+            type: 'training',
+            level: 3,
+            title: 'Training card'
+        },
+        {
+            type: 'training',
+            level: 4,
+            title: 'Training card'
+        },
+        {
+            type: 'training',
+            level: 5,
+            title: 'Training card'
+        },
+        {
+            type: 'training',
+            level: 6,
+            title: 'Training card'
         },
         {
             type: 'stamina',
-            level: 1
+            level: 1,
+            title: 'Stamina recovery'
+        },
+        {
+            type: 'stamina',
+            level: 4,
+            title: 'Stamina recovery'
         },
         {
             type: 'upgrade',
             level: 1,
-            purpose: 'stadium'
+            purpose: 'stadium',
+            title: 'Stadium upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 2,
+            purpose: 'stadium',
+            title: 'Stadium upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 3,
+            purpose: 'stadium',
+            title: 'Stadium upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 4,
+            purpose: 'stadium',
+            title: 'Stadium upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 5,
+            purpose: 'stadium',
+            title: 'Stadium upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 6,
+            purpose: 'stadium',
+            title: 'Stadium upgrade'
         },
         {
             type: 'upgrade',
             level: 1,
-            purpose: 'training'
+            purpose: 'training',
+            title: 'Training Facilities upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 2,
+            purpose: 'training',
+            title: 'Training Facilities upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 3,
+            purpose: 'training',
+            title: 'Training Facilities upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 4,
+            purpose: 'training',
+            title: 'Training Facilities upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 5,
+            purpose: 'training',
+            title: 'Training Facilities upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 6,
+            purpose: 'training',
+            title: 'Training Facilities upgrade'
         },
         {
             type: 'upgrade',
             level: 1,
-            purpose: 'pitch'
+            purpose: 'pitch',
+            title: 'Pitch upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 2,
+            purpose: 'pitch',
+            title: 'Pitch upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 3,
+            purpose: 'pitch',
+            title: 'Pitch upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 4,
+            purpose: 'pitch',
+            title: 'Pitch upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 5,
+            purpose: 'pitch',
+            title: 'Pitch upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 6,
+            purpose: 'pitch',
+            title: 'Pitch upgrade'
         },
         {
             type: 'upgrade',
             level: 1,
-            purpose: 'gym'
+            purpose: 'gym',
+            title: 'Gym upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 2,
+            purpose: 'gym',
+            title: 'Gym upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 3,
+            purpose: 'gym',
+            title: 'Gym upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 4,
+            purpose: 'gym',
+            title: 'Gym upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 5,
+            purpose: 'gym',
+            title: 'Gym upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 6,
+            purpose: 'gym',
+            title: 'Gym upgrade'
         },
         {
             type: 'upgrade',
             level: 1,
-            purpose: 'match'
+            purpose: 'match',
+            title: 'Match manager upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 2,
+            purpose: 'match',
+            title: 'Match manager upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 3,
+            purpose: 'match',
+            title: 'Match manager upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 4,
+            purpose: 'match',
+            title: 'Match manager upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 5,
+            purpose: 'match',
+            title: 'Match manager upgrade'
+        },
+        {
+            type: 'upgrade',
+            level: 6,
+            purpose: 'match',
+            title: 'Match manager upgrade'
         }
     ],
     achievements: [
