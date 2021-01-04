@@ -2,7 +2,7 @@
   class="lead-link"
   :class="size">
   <div class="lead-link-inner">
-    <router-link class="anchor" :to="'/'+path"></router-link>
+    <router-link v-if="path !== undefined" class="anchor" :to="'/'+path"></router-link>
     <img class="bg-image" v-if="background !== undefined" :src="backgroundImage" alt="Background">
     <div class="content-wrapper">
       <div class="title">

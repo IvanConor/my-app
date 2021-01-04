@@ -10,7 +10,8 @@
       size="big"
       title="Tactical Plan"
       path="tactics"
-      :sideimage='"emblems/" + emblem' :sideimagetext="teamStrength" />
+      :sideimage='"emblems/" + emblem'
+      :sideimagetext="teamStrength" />
     <LeadLink
       size="small"
       title="Leaderboards"
@@ -20,7 +21,6 @@
     <LeadLink
       size="big"
       title="Division Stars"
-      path="divisions"
       sideimage='icons/ranking' />
     <LeadLink
       size="small"
